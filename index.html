@@ -71,6 +71,7 @@
             <select id="turbina-wiatrowa">
                 <option value="0" data-price="0">Brak</option>
                 <option value="xaltus_6kw" data-price="19000">turbina Xaltus 6kW</option>
+                <option value="warme_s3_6kw" data-price="13000">turbina WARME-S3-6K 6KW</option>
             </select>
             <div class="form-buttons"><button onclick="przejdzDoEtapu(1)" class="wstecz">&larr; Wstecz</button><button onclick="przejdzDoEtapu(3)">Dalej &rarr;</button></div></div>
             <div id="etap3" class="etap ukryty">
@@ -117,7 +118,7 @@
                 <label for="inne-dodatki-cena">Inne dodatki (kwota w PLN):</label><input type="number" id="inne-dodatki-cena" min="0" value="0">
                 <div class="form-buttons"><button onclick="przejdzDoEtapu(2)" class="wstecz">&larr; Wstecz</button><button onclick="przejdzDoEtapu(4)">Dalej &rarr;</button></div>
             </div>
-            <div id="etap4" class="etap ukryty"><h2>Krok 4: Dane do oferty</h2><div id="formularz-danych"><h3>Dane Klienta</h3><input type="text" id="klient-imie" placeholder="Imię i nazwisko" required><input type="text" id="klient-adres" placeholder="Adres montażu" required><input type="text" id="klient-kod" placeholder="Kod pocztowy i miejscowość" required><input type="tel" id="klient-telefon" placeholder="Telefon" required><input type="email" id="klient-email" placeholder="E-mail" required><h3>Dane Handlowca</h3><input type="text" id="ph-imie" placeholder="Imię i nazwisko handlowca" required><input type="tel" id="ph-telefon" placeholder="Telefon handlowca" required><input type="email" id="ph-email" placeholder="E-mail handlowca" required><input type="text" id="ph-teren" placeholder="Teren działania" required>
+            <div id="etap4" class="etap ukryty"><h2>Krok 4: Dane do oferty                </h2><div id="formularz-danych"><h3>Dane Klienta</h3><input type="text" id="klient-imie" placeholder="Imię i nazwisko" required><input type="text" id="klient-adres" placeholder="Adres montażu" required><input type="text" id="klient-kod" placeholder="Kod pocztowy i miejscowość" required><input type="tel" id="klient-telefon" placeholder="Telefon" required><input type="email" id="klient-email" placeholder="E-mail" required><h3>Dane Handlowca</h3><input type="text" id="ph-imie" placeholder="Imię i nazwisko handlowca" required><input type="tel" id="ph-telefon" placeholder="Telefon handlowca" required><input type="email" id="ph-email" placeholder="E-mail handlowca" required><input type="text" id="ph-teren" placeholder="Teren działania" required>
             <label for="info-dla-biura">INFO DLA BIURA (widoczne tylko na ofercie dla biura):</label>
             <textarea id="info-dla-biura" rows="3" placeholder="Wpisz dodatkowe informacje dla biura..."></textarea>
             <div class="form-buttons"><button type="button" onclick="przejdzDoEtapu(3)" class="wstecz">&larr; Wstecz</button><button type="button" id="przycisk-pdf-klient">Generuj ofertę dla Klienta</button><button type="button" id="przycisk-pdf-biuro">Generuj podsumowanie dla Biura</button></div></div></div>
@@ -449,7 +450,7 @@
         dodajDoListyProduktow('Zestaw glowny', daneOferty.zestawPV.text);
         dodajDoListyProduktow('Magazyn NN', daneOferty.magazynNisko.text);
         dodajDoListyProduktow('Magazyn WN', daneOferty.magazynWysoko.text);
-        dodajDoListyProduktow('Magazyn Ciepla', daneOferty.dodatkiMagazyn.text);
+        dodajDoListowProduktow('Magazyn Ciepla', daneOferty.dodatkiMagazyn.text);
         dodajDoListyProduktow('Dodatkowe moduly', daneOferty.dodatkiModuly.text);
         dodajDoListyProduktow('Turbina wiatrowa', daneOferty.turbinaWiatrowa.text);
         if (daneOferty.przekop.value !== 'brak') {
@@ -576,10 +577,3 @@
 </script>
 </body>
 </html>
-
-
-
-potrzebuje w tym kodzie dodac tyllko 
-
-chce dodać do listy rozwijalna kolejna turbine to raz
-ma kosztowac 13 000 netto - i nazywa sie WARME-S3-6K 6KW
