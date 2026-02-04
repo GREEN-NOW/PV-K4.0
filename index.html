@@ -441,14 +441,119 @@
         return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, 'l').replace(/Ł/g, 'L');
     }
 
-   function generujPDF(typ) {
+  function generujPDF(typ) {
         aktualizujPodsumowanieWizualne(); 
         if (!daneOferty.klient.imie) {
             alert("Proszę wypełnić dane klienta przed wygenerowaniem oferty.");
             przejdzDoEtapu(4);
-            document.getElementById('klient-imie').focus();
             return;
         }
+
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        
+        // Funkcja do usuwania polskich znaków (bezpieczeństwo PDF)
+        const f = (s) => {
+            if (!s) return "";
+            return s.toString().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, 'l').replace(/Ł/g, 'L');
+        };
+
+        const zielony = [0, 91, 65];
+        const dzisiaj = new Date().toLocaleDateString('pl-PL');
+        if (numerZapisanejOferty === null) {
+            numerZapisanejOferty = `GN/${new Date().getTime()}`;
+        }
+
+        // 1. Logo i Nagłówek (Prawa strona)
+        if (typeof LOGO_BASE64 !== 'undefined') {
+            doc.addImage(LOGO_BASE64, 'PNG', 15, 15, 60, 25);
+        }
+        
+        doc.setTextColor(...zielony);
+        doc.setFontSize(22);
+        doc.setFont("helvetica", "bold");
+        doc.text(f("Oferta Handlowa"), 195, 25, { align: "right" });
+        
+        doc.setFontSize(10);
+        doc.setTextColor(100);
+        doc.text(f(`Numer: ${numerZapisanejOferty}`), 195, 35, { align: "right" });
+        doc.text(f(`Data: ${dzisiaj}`), 195, 42, { align: "right" });
+
+        // 2. Dane Nabywca / Sprzedawca (Dwie kolumny)
+        let y = 65;
+        doc.setFontSize(11);
+        doc.setTextColor(...zielony);
+        doc.text(f("NABYWCA"), 15, y);
+        doc.text(f("SPRZEDAWCA / PRZEDSTAWICIEL"), 105, y);
+        
+        doc.setDrawColor(...zielony);
+        doc.line(15, y + 2, 195, y + 2);
+
+        y += 12;
+        doc.setTextColor(0);
+        doc.setFont("helvetica", "bold");
+        doc.text(f(daneOferty.klient.imie), 15, y);
+        doc.text(f("GREEN NOW SP. Z O.O."), 105, y);
+
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(10);
+        doc.text(f(daneOferty.klient.adres || ""), 15, y + 7);
+        doc.text(f(daneOferty.klient.kod || ""), 15, y + 14);
+        
+        doc.text(f(`Przedstawiciel: ${daneOferty.handlowiec.imie}`), 105, y + 7);
+        doc.text(f(`tel: ${daneOferty.handlowiec.telefon || ""}`), 105, y + 14);
+        doc.text(f(`email: ${daneOferty.handlowiec.email || ""}`), 105, y + 21);
+
+        // 3. Tabela - Zakres prac (Identyczna jak w Twoim PDF)
+        y += 40;
+        doc.setFontSize(12);
+        doc.setTextColor(...zielony);
+        doc.setFont("helvetica", "bold");
+        doc.text(f("ZAKRES PRAC I MATERIALOW"), 15, y);
+
+        let rows = [];
+        if (daneOferty.zestawPV.text && daneOferty.zestawPV.text !== "-- Wybierz --") 
+            rows.push([f("- Zestaw PV: " + daneOferty.zestawPV.text)]);
+        if (daneOferty.magazynNisko.text && daneOferty.magazynNisko.price > 0) 
+            rows.push([f("- Magazyn DEYE: " + daneOferty.magazynNisko.text)]);
+        if (daneOferty.magazynWysoko.text && daneOferty.magazynWysoko.price > 0) 
+            rows.push([f("- Magazyn DYNESS: " + daneOferty.magazynWysoko.text)]);
+        if (daneOferty.magazynSigen && daneOferty.magazynSigen.price > 0) 
+            rows.push([f("- Magazyn SIGEN: " + daneOferty.magazynSigen.text)]);
+        if (daneOferty.turbinaWiatrowa.price > 0) 
+            rows.push([f("- Turbina wiatrowa: " + daneOferty.turbinaWiatrowa.text)]);
+        if (daneOferty.ladowarka.price > 0) 
+            rows.push([f("- Ladowarka EV: " + daneOferty.ladowarka.text)]);
+
+        doc.autoTable({
+            startY: y + 5,
+            body: rows,
+            theme: 'plain',
+            styles: { fontSize: 10, cellPadding: 2 },
+            margin: { left: 15 }
+        });
+
+        // 4. Podsumowanie finansowe (Prawa strona)
+        let finalY = doc.lastAutoTable.finalY + 20;
+        const sumaNetto = daneOferty.obliczenia.sumaNettoFinal.toFixed(2);
+        const sumaBrutto = daneOferty.obliczenia.cenaKoncowa.toFixed(2);
+        const vat = (daneOferty.stawkaVat * 100).toFixed(0);
+
+        doc.autoTable({
+            startY: finalY,
+            margin: { left: 110 },
+            body: [
+                [f("Wartosc Netto:"), `${sumaNetto} zl`],
+                [f(`Podatek VAT (${vat}%):`), `${(sumaBrutto - sumaNetto).toFixed(2)} zl`],
+                [f("CENA KONCOWA BRUTTO:"), `${sumaBrutto} zl`]
+            ],
+            theme: 'grid',
+            styles: { fontStyle: 'bold', halign: 'right' },
+            columnStyles: { 0: { cellWidth: 50 }, 1: { cellWidth: 35 } }
+        });
+
+        doc.save(`Oferta_${f(daneOferty.klient.imie).replace(/\s+/g, '_')}.pdf`);
+    }
         
         // Generowanie numeru oferty jeśli nie istnieje
         if (typeof numerZapisanejOferty === 'undefined' || numerZapisanejOferty === null) {
