@@ -441,13 +441,98 @@
         return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, 'l').replace(/Ł/g, 'L');
     }
 
-    function generujPDF(typ) {
+   function generujPDF(typ) {
         aktualizujPodsumowanieWizualne(); 
-        if (!document.getElementById('klient-imie').value) { alert('Wpisz imię klienta!'); return; }
+        if (!daneOferty.klient.imie) {
+            alert("Proszę wypełnić dane klienta przed wygenerowaniem oferty.");
+            przejdzDoEtapu(4);
+            document.getElementById('klient-imie').focus();
+            return;
+        }
+        
+        // Generowanie numeru oferty jeśli nie istnieje
+        if (typeof numerZapisanejOferty === 'undefined' || numerZapisanejOferty === null) {
+            const dzisiaj = new Date();
+            numerZapisanejOferty = `GN/${dzisiaj.getDate().toString().padStart(2, '0')}${(dzisiaj.getMonth() + 1).toString().padStart(2, '0')}${dzisiaj.getFullYear()}/${String(Date.now()).slice(-4)}`;
+        }
+        
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
-        doc.text(removePolishChars("Oferta handlowa Green Now Katowice"), 20, 20);
-        doc.save('Oferta.pdf');
+        
+        function removePolishChars(str) {
+            if (typeof str !== 'string') return str;
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ł/g, 'l').replace(/Ł/g, 'L');
+        }
+        
+        const dzisiaj = new Date();
+        const zielonyKolor = [0, 91, 65];
+
+        // Naglowek i Logo
+        if (typeof LOGO_BASE64 !== 'undefined' && LOGO_BASE64.length > 200) { 
+             doc.addImage(LOGO_BASE64, 'PNG', 40, 20, 50, 20);
+        }
+        doc.setFontSize(20);
+        doc.setTextColor(...zielonyKolor);
+        doc.setFont('helvetica', 'bold');
+        doc.text(removePolishChars("Oferta Handlowa"), 140, 30);
+        
+        doc.setFontSize(9);
+        doc.setTextColor(100);
+        doc.text(removePolishChars(`Numer: ${numerZapisanejOferty}`), 140, 40);
+        doc.text(removePolishChars(`Data: ${dzisiaj.toLocaleDateString('pl-PL')}`), 140, 45);
+
+        // Sekcja Nabywca / Sprzedawca
+        let yPos = 70;
+        doc.setFontSize(11);
+        doc.setTextColor(...zielonyKolor);
+        doc.text(removePolishChars("NABYWCA"), 20, yPos);
+        doc.text(removePolishChars("SPRZEDAWCA"), 110, yPos);
+        doc.line(20, yPos + 2, 190, yPos + 2);
+        
+        yPos += 10;
+        doc.setFontSize(10);
+        doc.setTextColor(50);
+        doc.setFont('helvetica', 'bold');
+        doc.text(removePolishChars(daneOferty.klient.imie), 20, yPos);
+        doc.text(removePolishChars("GREEN NOW SP. Z O.O."), 110, yPos);
+        
+        doc.setFont('helvetica', 'normal');
+        doc.text(removePolishChars(daneOferty.klient.adres || ''), 20, yPos + 7);
+        doc.text(removePolishChars(`tel: ${daneOferty.klient.telefon || ''}`), 20, yPos + 14);
+        doc.text(removePolishChars(`Przedstawiciel: ${daneOferty.handlowiec.imie}`), 110, yPos + 7);
+
+        // Tabela Produktow
+        yPos += 40;
+        doc.setFontSize(12);
+        doc.setTextColor(...zielonyKolor);
+        doc.text(removePolishChars("ZAKRES URZADZEN I PRAC"), 20, yPos);
+
+        let bodyTable = [];
+        if (daneOferty.zestawPV.text) bodyTable.push(["Zestaw fotowoltaiczny", removePolishChars(daneOferty.zestawPV.text)]);
+        if (daneOferty.magazynNisko.price > 0) bodyTable.push(["Magazyn Energii DEYE", removePolishChars(daneOferty.magazynNisko.text)]);
+        if (daneOferty.magazynWysoko.price > 0) bodyTable.push(["Magazyn Energii DYNESS", removePolishChars(daneOferty.magazynWysoko.text)]);
+        if (daneOferty.magazynSigen && daneOferty.magazynSigen.price > 0) bodyTable.push(["Magazyn Energii SIGEN", removePolishChars(daneOferty.magazynSigen.text)]);
+        if (daneOferty.ladowarka && daneOferty.ladowarka.price > 0) bodyTable.push(["Ladowarka EV", removePolishChars(daneOferty.ladowarka.text)]);
+        if (daneOferty.dodatkiModuly.price > 0) bodyTable.push(["Dodatkowe moduly", removePolishChars(daneOferty.dodatkiModuly.text)]);
+        if (daneOferty.turbinaWiatrowa.price > 0) bodyTable.push(["Turbina Wiatrowa", removePolishChars(daneOferty.turbinaWiatrowa.text)]);
+
+        doc.autoTable({
+            startY: yPos + 5,
+            head: [[removePolishChars('Pozycja'), removePolishChars('Opis')]],
+            body: bodyTable,
+            theme: 'striped',
+            headStyles: { fillColor: zielonyKolor }
+        });
+
+        // Podsumowanie cenowe
+        let finalY = doc.lastAutoTable.finalY + 15;
+        doc.setFontSize(12);
+        doc.setFont('helvetica', 'bold');
+        doc.text(removePolishChars(`SUMA NETTO: ${daneOferty.obliczenia.sumaNettoFinal.toFixed(2)} PLN`), 120, finalY);
+        doc.text(removePolishChars(`CENA BRUTTO: ${daneOferty.obliczenia.cenaKoncowa.toFixed(2)} PLN`), 120, finalY + 10);
+
+        const nazwaPliku = `Oferta_${removePolishChars(daneOferty.klient.imie).replace(' ','_')}.pdf`;
+        doc.save(nazwaPliku);
     }
 
     document.getElementById('przycisk-pdf-klient').addEventListener('click', () => generujPDF('klient'));
