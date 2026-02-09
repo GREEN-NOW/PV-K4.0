@@ -462,8 +462,52 @@
         aktualizujPodsumowanieWizualne();
     }));
     document.querySelectorAll('input, select, textarea').forEach(el => el.addEventListener('change', aktualizujPodsumowanieWizualne));
-    document.getElementById('przycisk-pdf-klient').addEventListener('click', () => generujPDF('klient'));
-    document.getElementById('przycisk-pdf-biuro').addEventListener('click', () => generujPDF('biuro'));
+// --- NOWA FUNKCJA WYSYŁAJĄCA DANE DO GOOGLE SHEETS ---
+    async function wyslijDaneDoArkusza() {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwRTxDix4uo8xiSDdK5lGu9AEQ55rGhQR-Hrq_hTZ5cTgVMKoHJCrOsNcEHzqpv1bzN/exec';
+
+        // Sprawdzenie, czy oferta jest gotowa do wysyłki
+        if (!daneOferty.klient || !daneOferty.klient.imie) return;
+
+        const payload = {
+            dataWygenerowania: new Date().toLocaleString('pl-PL'),
+            numerOferty: numerZapisanejOferty || "W trakcie...",
+            klient: daneOferty.klient.imie,
+            handlowiec: daneOferty.handlowiec.imie,
+            kwotaNetto: daneOferty.obliczenia.sumaNettoFinal,
+            kwotaBrutto: daneOferty.obliczenia.cenaKoncowa,
+            produkty: document.getElementById('lista-wybranych-elementow').innerText.replace(/\n/g, ", "),
+            marzaHandlowca: daneOferty.obliczenia.marzaDlaPH,
+            marzaDlaFirmy: daneOferty.nadprowizje.firma,
+            nadprowizjaDyrektora: daneOferty.nadprowizje.dyrektor,
+            nadprowizjaKierownika: daneOferty.nadprowizje.kierownik,
+            nadprowizjaFirmy: daneOferty.nadprowizje.firma
+        };
+
+        try {
+            await fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                cache: 'no-cache',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            console.log("Dane wysłane pomyślnie do bazy Google.");
+        } catch (error) {
+            console.error('Błąd połączenia z bazą:', error);
+        }
+    }
+
+    // --- PODPIĘCIE AKCJI POD PRZYCISKI (PDF + WYSYŁKA) ---
+    document.getElementById('przycisk-pdf-klient').addEventListener('click', async () => {
+        generujPDF('klient'); // Najpierw tworzy PDF (ustawia numer oferty)
+        await wyslijDaneDoArkusza(); // Potem wysyła dane do Arkusza
+    });
+
+    document.getElementById('przycisk-pdf-biuro').addEventListener('click', async () => {
+        generujPDF('biuro');
+        await wyslijDaneDoArkusza();
+    });
 </script>
 </body>
 </html>
