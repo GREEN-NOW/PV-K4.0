@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdnjs.cloudflare.com;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdnjs.cloudflare.com;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Green Now - Wersja Poprawiona</title>
     
@@ -463,22 +463,25 @@
     }));
     document.querySelectorAll('input, select, textarea').forEach(el => el.addEventListener('change', aktualizujPodsumowanieWizualne));
 // --- NOWA FUNKCJA WYSYŁAJĄCA DANE DO GOOGLE SHEETS ---
+   // --- FUNKCJA WYSYŁAJĄCA DANE ---
     async function wyslijDaneDoArkusza() {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwRTxDix4uo8xiSDdK5lGu9AEQ55rGhQR-Hrq_hTZ5cTgVMKoHJCrOsNcEHzqpv1bzN/exec';
 
-        // Sprawdzenie, czy oferta jest gotowa do wysyłki
-        if (!daneOferty.klient || !daneOferty.klient.imie) return;
+        if (!daneOferty.klient || !daneOferty.klient.imie) {
+            console.log("Brak danych klienta - wysyłka przerwana.");
+            return;
+        }
 
         const payload = {
             dataWygenerowania: new Date().toLocaleString('pl-PL'),
-            numerOferty: numerZapisanejOferty || "W trakcie...",
-            klient: daneOferty.klient.imie,
+            numerOferty: numerZapisanejOferty || "Brak",
+            klient: daneOferty.klient.imie + (daneOferty.klient.adres ? ", " + daneOferty.klient.adres : ""),
             handlowiec: daneOferty.handlowiec.imie,
             kwotaNetto: daneOferty.obliczenia.sumaNettoFinal,
             kwotaBrutto: daneOferty.obliczenia.cenaKoncowa,
-            produkty: document.getElementById('lista-wybranych-elementow').innerText.replace(/\n/g, ", "),
+            produkty: document.getElementById('lista-wybranych-elementow').innerText.replace(/\n/g, "; "),
             marzaHandlowca: daneOferty.obliczenia.marzaDlaPH,
-            marzaDlaFirmy: daneOferty.nadprowizje.firma,
+            marzaDlaFirmy: daneOferty.obliczenia.sumaNettoFinal - daneOferty.obliczenia.kosztBazowy - daneOferty.obliczenia.marzaDlaPH, // Wyliczenie różnicy
             nadprowizjaDyrektora: daneOferty.nadprowizje.dyrektor,
             nadprowizjaKierownika: daneOferty.nadprowizje.kierownik,
             nadprowizjaFirmy: daneOferty.nadprowizje.firma
@@ -487,21 +490,26 @@
         try {
             await fetch(scriptURL, {
                 method: 'POST',
-                mode: 'no-cors',
+                mode: 'no-cors', // Kluczowe dla Google Apps Script
                 cache: 'no-cache',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
             });
-            console.log("Dane wysłane pomyślnie do bazy Google.");
+            console.log("Próba wysyłki zakończona. Sprawdź arkusz.");
         } catch (error) {
-            console.error('Błąd połączenia z bazą:', error);
+            console.error('Błąd krytyczny wysyłki:', error);
         }
     }
 
-    // --- PODPIĘCIE AKCJI POD PRZYCISKI (PDF + WYSYŁKA) ---
+    // --- PODPIĘCIE POD PRZYCISKI ---
     document.getElementById('przycisk-pdf-klient').addEventListener('click', async () => {
-        generujPDF('klient'); // Najpierw tworzy PDF (ustawia numer oferty)
-        await wyslijDaneDoArkusza(); // Potem wysyła dane do Arkusza
+        generujPDF('klient');
+        await wyslijDaneDoArkusza();
+    });
+
+    document.getElementById('przycisk-pdf-biuro').addEventListener('click', async () => {
+        generujPDF('biuro');
+        await wyslijDaneDoArkusza();
     });
 
     document.getElementById('przycisk-pdf-biuro').addEventListener('click', async () => {
