@@ -446,7 +446,7 @@
         doc.setFont('helvetica', 'normal'); doc.text(removePolishChars(daneOferty.klient.adres), 15, y+7); doc.text(removePolishChars(daneOferty.klient.kod), 15, y+14); doc.text(`tel: ${daneOferty.klient.telefon}`, 15, y+21);
         doc.text(removePolishChars(`Handlowiec: ${daneOferty.handlowiec.imie}`), 105, y+7); doc.text(`tel: ${daneOferty.handlowiec.telefon}`, 105, y+14);
         y += 45; doc.setFontSize(12); doc.setTextColor(...zielony); doc.setFont('helvetica', 'bold'); doc.text("ZAKRES PRAC I MATERIALOW", 15, y);
-      let list = [];
+    let list = [];
         const add = (l, v) => { 
             if(v && v !== '0' && v !== 'Brak' && v !== '-- Wybierz --' && v !== '-- Brak --' && v !== 'brak' && v !== 'NIE DOTYCZY' && v !== 'NIE' && v !== 0) {
                 list.push([removePolishChars("- " + l + ": " + v)]); 
@@ -456,6 +456,7 @@
         // GŁÓWNE ELEMENTY
         if(daneOferty.oplataDokladka > 0) add('Typ zlecenia', 'Dokladka instalacji');
         add('Zestaw fotowoltaiczny', daneOferty.zestawPV.text);
+        add('Wymiana Falownik+Magazyn', daneOferty.wymianaFalownikMagazyn.text);
         
         // MAGAZYNY I URZĄDZENIA
         add('Magazyn DEYE', daneOferty.magazynNisko.text);
@@ -466,7 +467,6 @@
         add('Dodatkowe moduly PV', daneOferty.dodatkiModuly.text);
         add('Turbina Wiatrowa', daneOferty.turbinaWiatrowa.text);
         add('Klimatyzacja', daneOferty.klimatyzacja.text);
-        add('Wymiana Falownik+Magazyn', daneOferty.wymianaFalownikMagazyn.text);
 
         // PRACE DODATKOWE I ZIEMNE
         if(daneOferty.przekop.value !== 'brak') {
@@ -480,8 +480,10 @@
         // INNE DODATKI
         if(daneOferty.inneDodatki.cena > 0) {
             add(daneOferty.inneDodatki.nazwa || 'Inne dodatki', daneOferty.inneDodatki.cena + " PLN");
-        } add('Sigen 2', daneOferty.magazynSigen2.text); add('Ladowarka', daneOferty.ladowarka.text);
-        doc.autoTable({ startY: y+10, body: list, theme: 'plain', styles: { fontSize: 10 } });
+        }
+
+        // GENEROWANIE TABELI
+        doc.autoTable({ startY: y + 10, body: list, theme: 'plain', styles: { fontSize: 10 } });
         let summary = []; if(typ === 'biuro') summary.push(["Marza:", `${daneOferty.obliczenia.marzaDlaPH.toFixed(2)} zl`]);
         summary.push(["Netto:", `${daneOferty.obliczenia.sumaNettoFinal.toFixed(2)} zl`], ["VAT:", `${daneOferty.obliczenia.kwotaVat.toFixed(2)} zl`], ["BRUTTO:", `${daneOferty.obliczenia.cenaKoncowa.toFixed(2)} zl`]);
         doc.autoTable({ startY: doc.lastAutoTable.finalY + 10, body: summary, theme: 'plain', styles: { halign: 'right', fontStyle: 'bold' }, margin: { left: 80 } });
