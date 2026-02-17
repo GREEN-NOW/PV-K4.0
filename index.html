@@ -446,8 +446,41 @@
         doc.setFont('helvetica', 'normal'); doc.text(removePolishChars(daneOferty.klient.adres), 15, y+7); doc.text(removePolishChars(daneOferty.klient.kod), 15, y+14); doc.text(`tel: ${daneOferty.klient.telefon}`, 15, y+21);
         doc.text(removePolishChars(`Handlowiec: ${daneOferty.handlowiec.imie}`), 105, y+7); doc.text(`tel: ${daneOferty.handlowiec.telefon}`, 105, y+14);
         y += 45; doc.setFontSize(12); doc.setTextColor(...zielony); doc.setFont('helvetica', 'bold'); doc.text("ZAKRES PRAC I MATERIALOW", 15, y);
-        let list = []; const add = (l, v) => { if(v && v !== '0' && v !== 'Brak' && v !== '-- Wybierz --' && v !== 'NIE DOTYCZY' && v !== 'NIE') list.push([removePolishChars("- " + l + ": " + v)]); };
-        if(daneOferty.oplataDokladka > 0) add('Typ', 'Dokladka (+400 zl netto)'); add('Zestaw', daneOferty.zestawPV.text); add('Magazyn DEYE', daneOferty.magazynNisko.text); add('Magazyn DYNESS', daneOferty.magazynWysoko.text); add('Sigen 1', daneOferty.magazynSigen1.text); add('Sigen 2', daneOferty.magazynSigen2.text); add('Ladowarka', daneOferty.ladowarka.text);
+      let list = [];
+        const add = (l, v) => { 
+            if(v && v !== '0' && v !== 'Brak' && v !== '-- Wybierz --' && v !== '-- Brak --' && v !== 'brak' && v !== 'NIE DOTYCZY' && v !== 'NIE' && v !== 0) {
+                list.push([removePolishChars("- " + l + ": " + v)]); 
+            }
+        };
+
+        // GŁÓWNE ELEMENTY
+        if(daneOferty.oplataDokladka > 0) add('Typ zlecenia', 'Dokladka instalacji');
+        add('Zestaw fotowoltaiczny', daneOferty.zestawPV.text);
+        
+        // MAGAZYNY I URZĄDZENIA
+        add('Magazyn DEYE', daneOferty.magazynNisko.text);
+        add('Magazyn DYNESS', daneOferty.magazynWysoko.text);
+        add('Magazyn SIGEN 1', daneOferty.magazynSigen1.text);
+        add('Magazyn SIGEN 2', daneOferty.magazynSigen2.text);
+        add('Ladowarka EV', daneOferty.ladowarka.text);
+        add('Dodatkowe moduly PV', daneOferty.dodatkiModuly.text);
+        add('Turbina Wiatrowa', daneOferty.turbinaWiatrowa.text);
+        add('Klimatyzacja', daneOferty.klimatyzacja.text);
+        add('Wymiana Falownik+Magazyn', daneOferty.wymianaFalownikMagazyn.text);
+
+        // PRACE DODATKOWE I ZIEMNE
+        if(daneOferty.przekop.value !== 'brak') {
+            add(`Przekop (${daneOferty.przekop.dlugosc}m, strona: ${daneOferty.przekop.strona})`, daneOferty.przekop.text);
+        }
+        if(daneOferty.samKabel.cena > 0) {
+            add(`Sam kabel (${daneOferty.samKabel.dlugosc}m)`, daneOferty.samKabel.text);
+        }
+        add('Modernizacja rozdzielni', daneOferty.modernizacjaRozdzielni.text);
+        
+        // INNE DODATKI
+        if(daneOferty.inneDodatki.cena > 0) {
+            add(daneOferty.inneDodatki.nazwa || 'Inne dodatki', daneOferty.inneDodatki.cena + " PLN");
+        } add('Sigen 2', daneOferty.magazynSigen2.text); add('Ladowarka', daneOferty.ladowarka.text);
         doc.autoTable({ startY: y+10, body: list, theme: 'plain', styles: { fontSize: 10 } });
         let summary = []; if(typ === 'biuro') summary.push(["Marza:", `${daneOferty.obliczenia.marzaDlaPH.toFixed(2)} zl`]);
         summary.push(["Netto:", `${daneOferty.obliczenia.sumaNettoFinal.toFixed(2)} zl`], ["VAT:", `${daneOferty.obliczenia.kwotaVat.toFixed(2)} zl`], ["BRUTTO:", `${daneOferty.obliczenia.cenaKoncowa.toFixed(2)} zl`]);
