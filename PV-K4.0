@@ -135,7 +135,7 @@
         'globalna-korekta-cen-zestawow': 0
     };
     const SCRIPT_URL_DO_DANYCH = "https://script.google.com/macros/s/AKfycbwRTxDix4uo8xiSDdK5lGu9AEQ55rGhQR-Hrq_hTZ5cTgVMKoHJCrOsNcEHzqpv1bzN/exec";
-    const POPRAWNE_HASLO = "ZielonaEnergia2025";
+    const POPRAWNE_HASLO = "GreenNow777!";
     const LOGO_BASE64 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA...'; // Tutaj wstaw pełny string Base64 Twojego logo
 
     let daneOferty = {}, aktywnaListaId = null, numerZapisanejOferty = null;
