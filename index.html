@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdnjs.cloudflare.com;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Green Now - Wersja Poprawiona</title>
+    <title>Kalkulator Green Now Katowice 4.0 - TCL 500</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
@@ -63,16 +63,16 @@
                     <option value="GRUNT">GRUNT</option>
                 </select>
                 
-                <label>ZESTAWY RISEN 450W + Inwerter Sieciowy DEYE SUN</label>
+                <label>ZESTAWY TCL 500W + Inwerter Sieciowy DEYE SUN</label>
                 <select id="zestaw-sieciowy" class="lista-produktow" disabled><option value="0" data-price="0">--</option></select>
                 
-                <label>ZESTAWY RISEN 450 + Inwerter hybrydowy DEYE SUN + MAGAZYN ENERGII NISKONAPIĘCIOWY - LV Felicity LUX-Y</label>
+                <label>ZESTAWY TCL 500W + Inwerter hybrydowy DEYE SUN + MAGAZYN ENERGII NISKONAPIĘCIOWY - LV Felicity LUX-Y</label>
                 <select id="zestaw-niskonapieciowy" class="lista-produktow" disabled><option value="0" data-price="0">--</option></select>
                 
-                <label>ZESTAWY RISEN 450 + Inwerter Sieciowy GOODWE + MAGAZYN ENERGII WYSOKONAPIĘCIOWY - Dyness Tower</label>
+                <label>ZESTAWY TCL 500W + Inwerter Sieciowy GOODWE + MAGAZYN ENERGII WYSOKONAPIĘCIOWY - Dyness Tower</label>
                 <select id="zestaw-wysokonapieciowy" class="lista-produktow" disabled><option value="0" data-price="0">--</option></select>
 
-                <label>ZESTAW PREMIUM (SigenStor)</label>
+                <label>ZESTAW PREMIUM TCL 500W (SigenStor)</label>
                 <select id="zestaw-premium" class="lista-produktow" disabled><option value="0" data-price="0">--</option></select>
 
                 <button onclick="przejdzDoEtapu(2)">Dalej &rarr;</button>
@@ -81,40 +81,40 @@
             <div id="etap2" class="etap ukryty">
                 <h2>Krok 2: Produkty i prace dodatkowe</h2>
                 
-                <label>Zwiększenie magazynu FELICITY:</label>
+                <label>Zwiększenie magazynu DEYE:</label>
                 <select id="magazyn-niskonapieciowy">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="felicity10" data-price="3500">Zwiększenie magazynu FELICITY do 10kWh</option>
-                    <option value="felicity14" data-price="4500">Zwiększenie magazynu FELICITY do 14,3kWh</option>
-                    <option value="felicity16" data-price="5500">Zwiększenie magazynu FELICITY do 16kWh</option>
-                    <option value="felicity20" data-price="8500">Zwiększenie magazynu FELICITY 20kW</option>
-                    <option value="felicity30" data-price="15000">Zwiększenie magazynu FELICITY 30kW</option>
-                    <option value="felicity32" data-price="13000">Zwiększenie magazynu FELICITY 32kW</option>
+                    <option value="deye10" data-price="3000">Zwiększenie magazynu DEYE do 10kWh</option>
+                    <option value="deye14" data-price="4500">Zwiększenie magazynu DEYE do 14,3kWh</option>
+                    <option value="deye16" data-price="5500">Zwiększenie magazynu DEYE do 16kWh</option>
+                    <option value="deye23" data-price="8500">Zwiększenie magazynu DEYE do 23,5kWh</option>
                 </select>
 
                 <label>Zwiększenie magazynu DYNESS:</label>
                 <select id="magazyn-wysokonapieciowy">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="14kwh" data-price="3100">Zwiększenie magazynu DYNESS do 14,21kWh</option>
-                    <option value="17kwh" data-price="6200">Zwiększenie magazynu DYNESS do 17,76kWh</option>
+                    <option value="dyness14" data-price="3100">Zwiększenie magazynu DYNESS do 14,21kWh</option>
+                    <option value="dyness17" data-price="6200">Zwiększenie magazynu DYNESS do 17,76kWh</option>
                 </select>
 
                 <label>Zwiększenie magazynu SIGENSTOR 1:</label>
                 <select id="magazyn-sigenstor-1">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="sig_10" data-price="6300">Zwiększenie magazynu SIGENSTOR 10kWh</option>
-                    <option value="sig_16" data-price="11000">Zwiększenie magazynu SIGENSTOR 16kWh</option>
-                    <option value="sig_20" data-price="17000">Zwiększenie magazynu SIGENSTOR 20kWh</option>
-                    <option value="sig_30" data-price="28000">Zwiększenie magazynu SIGENSTOR 30kWh</option>
+                    <option value="sig_9" data-price="3000">Zwiększenie magazynu SIGENSTOR do 9kWh</option>
+                    <option value="sig_15" data-price="10000">Zwiększenie magazynu SIGENSTOR do 15kWh</option>
+                    <option value="sig_18" data-price="13000">Zwiększenie magazynu SIGENSTOR do 18kWh</option>
+                    <option value="sig_24" data-price="18000">Zwiększenie magazynu SIGENSTOR do 24kWh</option>
+                    <option value="sig_27" data-price="22000">Zwiększenie magazynu SIGENSTOR do 27kWh</option>
                 </select>
 
                 <label>Zwiększenie magazynu SIGENSTOR 2:</label>
                 <select id="magazyn-sigenstor-2">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="sig_10_2" data-price="6300">Zwiększenie magazynu SIGENSTOR 10kWh</option>
-                    <option value="sig_16_2" data-price="11000">Zwiększenie magazynu SIGENSTOR 16kWh</option>
-                    <option value="sig_20_2" data-price="17000">Zwiększenie magazynu SIGENSTOR 20kWh</option>
-                    <option value="sig_30_2" data-price="28000">Zwiększenie magazynu SIGENSTOR 30kWh</option>
+                    <option value="sig_9_2" data-price="3000">Zwiększenie magazynu SIGENSTOR do 9kWh</option>
+                    <option value="sig_15_2" data-price="10000">Zwiększenie magazynu SIGENSTOR do 15kWh</option>
+                    <option value="sig_18_2" data-price="13000">Zwiększenie magazynu SIGENSTOR do 18kWh</option>
+                    <option value="sig_24_2" data-price="18000">Zwiększenie magazynu SIGENSTOR do 24kWh</option>
+                    <option value="sig_27_2" data-price="22000">Zwiększenie magazynu SIGENSTOR do 27kWh</option>
                 </select>
 
                 <h3>Inne dodatki</h3>
@@ -128,15 +128,16 @@
                 <label for="dodatki-magazyn">Magazyn Ciepła:</label>
                 <select id="dodatki-magazyn">
                     <option value="0" data-price="0">Brak</option>
-                    <option value="bufor_100l" data-price="2300">Bufor Ciepła 100l</option>
+                    <option value="bufor_100l" data-price="2800">Bufor 100l</option>
+                    <option value="bufor_200l" data-price="5100">Bufor 200l</option>
                 </select>
 
                 <label>Dodatkowe moduły:</label>
                 <select id="dodatki-moduly">
                     <option value="0" data-price="0">Brak</option>
-                    <option value="2szt" data-price="2500">2 szt.</option>
-                    <option value="3szt" data-price="3000">3 szt.</option>
-                    <option value="4szt" data-price="3500">4 szt.</option>
+                    <option value="2szt" data-price="3000">Dokładka modułów 2 SZTUKI</option>
+                    <option value="3szt" data-price="3800">Dokładka modułów 3 SZTUKI</option>
+                    <option value="4szt" data-price="4200">Dokładka modułów 4 SZTUKI</option>
                 </select>
 
                 <label>TURBINY WIATROWE:</label>
@@ -177,30 +178,20 @@
                 <label>Klimatyzacja:</label>
                 <select id="klimatyzacja">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="klima_2_6" data-price="3330">Klimatyzacja TCL Ocarina 2,6kW</option>
-                    <option value="klima_3_4" data-price="3420">Klimatyzacja TCL Ocarina 3,4kW</option>
-                    <option value="klima_5_1" data-price="4120">Klimatyzacja TCL Ocarina 5,1kW</option>
-                    <option value="klima_6_8" data-price="4500">Klimatyzacja TCL Ocarina 6,8kW</option>
+                    <option value="klima_2_6" data-price="4300">Klimatyzator TCL Ocarina 2,6kW</option>
+                    <option value="klima_3_4" data-price="4500">Klimatyzator TCL Ocarina 3,4kW</option>
+                    <option value="klima_5_1" data-price="5200">Klimatyzator TCL Ocarina 5,1kW</option>
+                    <option value="klima_6_8" data-price="5600">Klimatyzator TCL Ocarina 6,8kW</option>
                 </select>
 
                 <label>Wymiana falownik + magazyn:</label>
                 <select id="wymiana-falownik-magazyn">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="wym_1" data-price="23400">Falownik HV (GoodWe) - Dyness T10</option>
-                    <option value="wym_2" data-price="26700">Falownik HV (GoodWe) - Dyness T14</option>
-                    <option value="wym_3" data-price="29900">Falownik HV (GoodWe) - Dynes T17</option>
-                    <option value="wym_4" data-price="21300">Falownik LV Deye + Felicity 5kWh</option>
-                    <option value="wym_5" data-price="24300">Falownik LV Deye + Felicity 10,5kWh</option>
-                    <option value="wym_6" data-price="25300">Falownik LV Deye + Felicity 14,3 kWh</option>
-                    <option value="wym_7" data-price="26800">Falownik LV Deye + Felicity 16kWh</option>
-                    <option value="wym_8" data-price="29800">Falownik Deye + Felicity 23,5kWh</option>
-                    <option value="wym_9" data-price="36300">Falownik Deye + Felicity 30kWh</option>
-                    <option value="wym_10" data-price="34300">Falownik Deye + Felicity 32kWh</option>
-                    <option value="wym_11" data-price="24000">Falownik Hybrid TP2 + SigenStor 6kWh (PSTRYK)</option>
-                    <option value="wym_12" data-price="27300">Falownik Hybrid TP2 + SigenStor 9kWh (PSTRYK)</option>
-                    <option value="wym_13" data-price="36100">Falownik Hybrid TP2 + SigenStor 15kWh (PSTRYK)</option>
-                    <option value="wym_14" data-price="38000">Falownik Hybrid TP2 + SigenStor 18kWh (PSTRYK)</option>
-                    <option value="wym_15" data-price="47700">Falownik Hybrid TP2 + SigenStor 27kWh (PSTRYK)</option>
+                    <option value="wym_goodwe10" data-price="23500">Falownik LV (GoodWe 10) + magazyn 10kWh</option>
+                    <option value="wym_deye5" data-price="20400">Falownik LV (Deye 5) + magazyn 5kWh</option>
+                    <option value="wym_deye10" data-price="23200">Falownik LV (Deye 10) + magazyn 10kWh</option>
+                    <option value="wym_sig6" data-price="22200">Falownik SIGEN HYBRID TP2 + SigenStor 6.0 (PSTRYK)</option>
+                    <option value="wym_sig10" data-price="24500">Falownik SIGEN HYBRID TP2 + SigenStor 10.0 (PSTRYK)</option>
                 </select>
                 
                 <label>Modernizacja rozdzielni:</label>
@@ -279,74 +270,1995 @@
     }
 
     const BAZA_PRODUKTOW_UI = {
-        "zestawy_sieciowe": {
-            "TRAPEZ": [ 
-                { "name": "TRAPEZ ZESTAW 2,7 KWP RISEN 450W + DEYE 1F", "price": 12400 }, { "name": "TRAPEZ ZESTAW 3,15 KWP RISEN 450W + DEYE 1F", "price": 13060 }, { "name": "TRAPEZ ZESTAW 3,6 KWP RISEN 450W + DEYE 1F", "price": 13540 }, { "name": "TRAPEZ ZESTAW 4,05 KWP RISEN 450W + DEYE 3F", "price": 14600 }, { "name": "TRAPEZ ZESTAW 4,5 KWP RISEN 450W + DEYE 3F", "price": 15350 }, { "name": "TRAPEZ ZESTAW 4,95 KWP RISEN 450W + DEYE 3F", "price": 16090 }, { "name": "TRAPEZ ZESTAW 5,4 KWP RISEN 450W + DEYE 3F", "price": 16820 }, { "name": "TRAPEZ ZESTAW 5,85 KWP RISEN 450W + DEYE 3F", "price": 17540 }, { "name": "TRAPEZ ZESTAW 6,3 KWP RISEN 450W + DEYE 3F", "price": 18250 }, { "name": "TRAPEZ ZESTAW 6,75 KWP RISEN 450W + DEYE 3F", "price": 18950 }, { "name": "TRAPEZ ZESTAW 7,2 KWP RISEN 450W + DEYE 3F", "price": 19640 }, { "name": "TRAPEZ ZESTAW 7,65 KWP RISEN 450W + DEYE 3F", "price": 20220 }, { "name": "TRAPEZ ZESTAW 8,1 KWP RISEN 450W + DEYE 3F", "price": 20750 }, { "name": "TRAPEZ ZESTAW 8,55 KWP RISEN 450W + DEYE 3F", "price": 21240 }, { "name": "TRAPEZ ZESTAW 9,0 KWP RISEN 450W + DEYE 3F", "price": 21800 }, { "name": "TRAPEZ ZESTAW 9,45 KWP RISEN 450W + DEYE 3F", "price": 22420 }, { "name": "TRAPEZ ZESTAW 9,9 KWP RISEN 450W + DEYE 3F", "price": 23070 }, { "name": "TRAPEZ ZESTAW 10,35 KWP RISEN 450W + DEYE 3F", "price": 23660 }, { "name": "TRAPEZ ZESTAW 10,8 KWP RISEN 450W + DEYE 3F", "price": 24140 }, { "name": "TRAPEZ ZESTAW 11,25 KWP RISEN 450W + DEYE 3F", "price": 24670 }, { "name": "TRAPEZ ZESTAW 11,7 KWP RISEN 450W + DEYE 3F", "price": 25290 }, { "name": "TRAPEZ ZESTAW 12,15 KWP RISEN 450W + DEYE 3F", "price": 25950 }, { "name": "TRAPEZ ZESTAW 12,6 KWP RISEN 450W + DEYE 3F", "price": 26500 }, { "name": "TRAPEZ ZESTAW 13,05 KWP RISEN 450W + DEYE 3F", "price": 27100 }, { "name": "TRAPEZ ZESTAW 13,5 KWP RISEN 450W + DEYE 3F", "price": 27650 }, { "name": "TRAPEZ ZESTAW 13,95 KWP RISEN 450w + DEYE 3F", "price": 28250 }, { "name": "TRAPEZ ZESTAW 14,4 KWP RISEN 450w + DEYE 3F", "price": 28850 }, { "name": "TRAPEZ ZESTAW 14,85 KWP RISEN 450w + DEYE 3F", "price": 29450 }, { "name": "TRAPEZ ZESTAW 15,3 KWP RISEN 450w + DEYE 3F", "price": 30050 }, { "name": "TRAPEZ ZESTAW 16,2 KWP RISEN 450w + DEYE 3F", "price": 30650 }, { "name": "TRAPEZ ZESTAW 17,1 KWP RISEN 450w + DEYE 3F", "price": 31250 }, { "name": "TRAPEZ ZESTAW 18,0 KWP RISEN 450w + DEYE 3F", "price": 31850 }, { "name": "TRAPEZ ZESTAW 18,9 KWP RISEN 450w + DEYE 3F", "price": 32450 }, { "name": "TRAPEZ ZESTAW 19,8 KWP RISEN 450w + DEYE 3F", "price": 33050 }
-            ],
-            "BLACHODACHÓWKA": [
-                { "name": "BLACHODACHÓWKA ZESTAW 2,7 KWP RISEN 450W + DEYE 1F", "price": 12773.80 }, { "name": "BLACHODACHÓWKA ZESTAW 3,15 KWP RISEN 450W + DEYE 1F", "price": 13496.10 }, { "name": "BLACHODACHÓWKA ZESTAW 3,6 KWP RISEN 450W + DEYE 1F", "price": 14038.40 }, { "name": "BLACHODACHÓWKA ZESTAW 4,05 KWP RISEN 450W + DEYE 3F", "price": 15160.70 }, { "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP RISEN 450W + DEYE 3F", "price": 15973.00 }, { "name": "BLACHODACHÓWKA ZESTAW 4,95 KWP RISEN 450W + DEYE 3F", "price": 16775.30 }, { "name": "BLACHODACHÓWKA ZESTAW 5,4 KWP RISEN 450W + DEYE 3F", "price": 17567.60 }, { "name": "BLACHODACHÓWKA ZESTAW 5,85 KWP RISEN 450W + DEYE 3F", "price": 18349.90 }, { "name": "BLACHODACHÓWKA ZESTAW 6,3 KWP RISEN 450W + DEYE 3F", "price": 19122.20 }, { "name": "BLACHODACHÓWKA ZESTAW 6,75 KWP RISEN 450W + DEYE 3F", "price": 19884.50 }, { "name": "BLACHODACHÓWKA ZESTAW 7,2 KWP RISEN 450W + DEYE 3F", "price": 20636.80 }, { "name": "BLACHODACHÓWKA ZESTAW 7,65 KWP RISEN 450W + DEYE 3F", "price": 21279.10 }, { "name": "BLACHODACHÓWKA ZESTAW 8,1 KWP RISEN 450W + DEYE 3F", "price": 21871.40 }, { "name": "BLACHODACHÓWKA ZESTAW 8,55 KWP RISEN 450W + DEYE 3F", "price": 22423.70 }, { "name": "BLACHODACHÓWKA ZESTAW 9,0 KWP RISEN 450W + DEYE 3F", "price": 23046.00 }, { "name": "BLACHODACHÓWKA ZESTAW 9,45 KWP RISEN 450W + DEYE 3F", "price": 23728.30 }, { "name": "BLACHODACHÓWKAZESTAW 9,9 KWP RISEN 450W + DEYE 3F", "price": 24440.60 }, { "name": "BLACHODACHÓWKA ZESTAW 10,35 KWP RISEN 450W + DEYE 3F", "price": 25092.90 }, { "name": "BLACHODACHÓWKA ZESTAW 10,8 KWP RISEN 450W + DEYE 3F", "price": 25635.20 }, { "name": "BLACHODACHÓWKA ZESTAW 11,25 KWP RISEN 450W + DEYE 3F", "price": 26227.50 }, { "name": "BLACHODACHÓWKA ZESTAW 11,7 KWP RISEN 450W + DEYE 3F", "price": 26909.80 }, { "name": "BLACHODACHÓWKA ZESTAW 12,15 KWP RISEN 450W + DEYE 3F", "price": 27632.10 }, { "name": "BLACHODACHÓWKA ZESTAW 12,6 KWP RISEN 450W + DEYE 3F", "price": 28244.40 }, { "name": "BLACHODACHÓWKA ZESTAW 13,05 KWP RISEN 450W + DEYE 3F", "price": 28906.70 }, { "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP RISEN 450W + DEYE 3F", "price": 29519.00 }, { "name": "BLACHODACHÓWKA ZESTAW 13,95 KWP RISEN 450w + DEYE 3F", "price": 30160 }, { "name": "BLACHODACHÓWKA ZESTAW 14,4 KWP RISEN 450w + DEYE 3F", "price": 30780 }, { "name": "BLACHODACHÓWKA ZESTAW 14,85 KWP RISEN 450w + DEYE 3F", "price": 31400 }, { "name": "BLACHODACHÓWKA ZESTAW 15,3 KWP RISEN 450w + DEYE 3F", "price": 32020 }, { "name": "BLACHODACHÓWKA ZESTAW 16,2 KWP RISEN 450w + DEYE 3F", "price": 32640 }, { "name": "BLACHODACHÓWKA ZESTAW 17,1 KWP RISEN 450w + DEYE 3F", "price": 33260 }, { "name": "BLACHODACHÓWKA ZESTAW 18,0 KWP RISEN 450w + DEYE 3F", "price": 33880 }, { "name": "BLACHODACHÓWKA ZESTAW 18,9 KWP RISEN 450w + DEYE 3F", "price": 34500 }, { "name": "BLACHODACHÓWKA ZESTAW 19,8 KWP RISEN 450w + DEYE 3F", "price": 35120 }
-            ],
-            "DACHÓWKA": [
-                { "name": "DACHÓWKA ZESTAW 2,7 KWP RISEN 450W + DEYE 1F", "price": 12934.00 }, { "name": "DACHÓWKA ZESTAW 3,15 KWP RISEN 450W + DEYE 1F", "price": 13683.00 }, { "name": "DACHÓWKA ZESTAW 3,6 KWP RISEN 450W + DEYE 1F", "price": 14252.00 }, { "name": "DACHÓWKA ZESTAW 4,05 KWP RISEN 450W + DEYE 3F", "price": 15401.00 }, { "name": "DACHÓWKA ZESTAW 4,5 KWP RISEN 450W + DEYE 3F", "price": 16240.00 }, { "name": "DACHÓWKA ZESTAW 4,95 KWP RISEN 450W + DEYE 3F", "price": 17069.00 }, { "name": "DACHÓWKA ZESTAW 5,4 KWP RISEN 450W + DEYE 3F", "price": 17888.00 }, { "name": "DACHÓWKA ZESTAW 5,85 KWP RISEN 450W + DEYE 3F", "price": 18697.00 }, { "name": "DACHÓWKA ZESTAW 6,3 KWP RISEN 450W + DEYE 3F", "price": 19496.00 }, { "name": "DACHÓWKA ZESTAW 6,75 KWP RISEN 450W + DEYE 3F", "price": 20285.00 }, { "name": "DACHÓWKA ZESTAW 7,2 KWP RISEN 450W + DEYE 3F", "price": 21064.00 }, { "name": "DACHÓWKA ZESTAW 7,65 KWP RISEN 450W + DEYE 3F", "price": 21733.00 }, { "name": "DACHÓWKA ZESTAW 8,1 KWP RISEN 450W + DEYE 3F", "price": 22352.00 }, { "name": "DACHÓWKA ZESTAW 8,55 KWP RISEN 450W + DEYE 3F", "price": 22931.00 }, { "name": "DACHÓWKA ZESTAW 9,0 KWP RISEN 450W + DEYE 3F", "price": 23580.00 }, { "name": "DACHÓWKA ZESTAW 9,45 KWP RISEN 450W + DEYE 3F", "price": 24289.00 }, { "name": "DACHÓWKA ZESTAW 9,9 KWP RISEN 450W + DEYE 3F", "price": 25028.00 }, { "name": "DACHÓWKA ZESTAW 10,35 KWP RISEN 450W + DEYE 3F", "price": 25707.00 }, { "name": "DACHÓWKA ZESTAW 10,8 KWP RISEN 450W + DEYE 3F", "price": 26276.00 }, { "name": "DACHÓWKA ZESTAW 11,25 KWP RISEN 450W + DEYE 3F", "price": 26895.00 }, { "name": "DACHÓWKA ZESTAW 11,7 KWP RISEN 450W + DEYE 3F", "price": 27604.00 }, { "name": "DACHÓWKA ZESTAW 12,15 KWP RISEN 450W + DEYE 3F", "price": 28353.00 }, { "name": "DACHÓWKA ZESTAW 12,6 KWP RISEN 450W + DEYE 3F", "price": 28992.00 }, { "name": "DACHÓWKA ZESTAW 13,05 KWP RISEN 450W + DEYE 3F", "price": 29681.00 }, { "name": "DACHÓWKA ZESTAW 13,5 KWP RISEN 450W + DEYE 3F", "price": 30320.00 }, { "name": "DACHÓWKA ZESTAW 13,95 KWP RISEN 450w + DEYE 3F", "price": 31000 }, { "name": "DACHÓWKA ZESTAW 14,4 KWP RISEN 450w + DEYE 3F", "price": 31650 }, { "name": "DACHÓWKA ZESTAW 14,85 KWP RISEN 450w + DEYE 3F", "price": 32300 }, { "name": "DACHÓWKA ZESTAW 15,3 KWP RISEN 450w + DEYE 3F", "price": 32950 }, { "name": "DACHÓWKA ZESTAW 16,2 KWP RISEN 450w + DEYE 3F", "price": 33600 }, { "name": "DACHÓWKA ZESTAW 17,1 KWP RISEN 450w + DEYE 3F", "price": 34250 }, { "name": "DACHÓWKA ZESTAW 18,0 KWP RISEN 450w + DEYE 3F", "price": 34900 }, { "name": "DACHÓWKA ZESTAW 18,9 KWP RISEN 450w + DEYE 3F", "price": 35550 }, { "name": "DACHÓWKA ZESTAW 19,8 KWP RISEN 450w + DEYE 3F", "price": 36200 }
-            ],
-            "EKIERKI": [
-                { "name": "EKIERKI INWAZYJNE ZESTAW 2,7 KWP RISEN 450w + DEYE 1F", "price": 13075 }, { "name": "EKIERKI INWAZYJNE ZESTAW 3,15 KWP RISEN 450w + DEYE 1F", "price": 13847.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 3,6 KWP RISEN 450w + DEYE 1F", "price": 14440 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,05 KWP RISEN 450w + DEYE 3F", "price": 15112.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP RISEN 450w + DEYE 3F", "price": 15975 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,95 KWP RISEN 450w + DEYE 3F", "price": 16827.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,4 KWP RISEN 450w + DEYE 3F", "price": 17670 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,85 KWP RISEN 450w + DEYE 3F", "price": 18502.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,3 KWP RISEN 450w + DEYE 3F", "price": 19325 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,75 KWP RISEN 450w + DEYE 3F", "price": 20002.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,2 KWP RISEN 450w + DEYE 3F", "price": 20796 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,65 KWP RISEN 450w + DEYE 3F", "price": 21479.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,1 KWP RISEN 450w + DEYE 3F", "price": 22113 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,55 KWP RISEN 450w + DEYE 3F", "price": 22706.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,0 KWP RISEN 450w + DEYE 3F", "price": 23370 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,45 KWP RISEN 450w + DEYE 3F", "price": 24093.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,9 KWP RISEN 450w + DEYE 3F", "price": 24847 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,35 KWP RISEN 450w + DEYE 3F", "price": 25540.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,8 KWP RISEN 450w + DEYE 3F", "price": 26124 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,25 KWP RISEN 450w + DEYE 3F", "price": 26757.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,7 KWP RISEN 450w + DEYE 3F", "price": 27481 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,15 KWP RISEN 450w + DEYE 3F", "price": 28244.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,6 KWP RISEN 450w + DEYE 3F", "price": 28898 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,05 KWP RISEN 450w + DEYE 3F", "price": 29601.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP RISEN 450w + DEYE 3F", "price": 30255 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,95 KWP RISEN 450w + DEYE 3F", "price": 30955 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,4 KWP RISEN 450w + DEYE 3F", "price": 31655 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,85 KWP RISEN 450w + DEYE 3F", "price": 32355 }, { "name": "EKIERKI INWAZYJNE ZESTAW 15,3 KWP RISEN 450w + DEYE 3F", "price": 33055 }, { "name": "EKIERKI INWAZYJNE ZESTAW 16,2 KWP RISEN 450w + DEYE 3F", "price": 33755 }, { "name": "EKIERKI INWAZYJNE ZESTAW 17,1 KWP RISEN 450w + DEYE 3F", "price": 34455 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,0 KWP RISEN 450w + DEYE 3F", "price": 35155 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,9 KWP RISEN 450w + DEYE 3F", "price": 35855 }, { "name": "EKIERKI INWAZYJNE ZESTAW 19,8 KWP RISEN 450w + DEYE 3F", "price": 36555 }
-            ],
-            "GRUNT": [
-                { "name": "GRUNT ZESTAW 2,7 KWP RISEN 450w + DEYE 1F", "price": 13372 }, { "name": "GRUNT ZESTAW 3,15 KWP RISEN 450w + DEYE 1F", "price": 14194 }, { "name": "GRUNT ZESTAW 3,6 KWP RISEN 450w + DEYE 1F", "price": 14836 }, { "name": "GRUNT ZESTAW 4,05 KWP RISEN 450w + DEYE 3F", "price": 16058 }, { "name": "GRUNT ZESTAW 4,5 KWP RISEN 450w + DEYE 3F", "price": 16470 }, { "name": "GRUNT ZESTAW 4,95 KWP RISEN 450w + DEYE 3F", "price": 17872 }, { "name": "GRUNT ZESTAW 5,4 KWP RISEN 450w + DEYE 3F", "price": 18764 }, { "name": "GRUNT ZESTAW 5,85 KWP RISEN 450w + DEYE 3F", "price": 19646 }, { "name": "GRUNT ZESTAW 6,3 KWP RISEN 450w + DEYE 3F", "price": 20518 }, { "name": "GRUNT ZESTAW 6,75 KWP RISEN 450w + DEYE 3F", "price": 21380 }, { "name": "GRUNT ZESTAW 7,2 KWP RISEN 450w + DEYE 3F", "price": 22232 }, { "name": "GRUNT ZESTAW 7,65 KWP RISEN 450w + DEYE 3F", "price": 22821 }, { "name": "GRUNT ZESTAW 8,1 KWP RISEN 450w + DEYE 3F", "price": 23504 }, { "name": "GRUNT ZESTAW 8,55 KWP RISEN 450w + DEYE 3F", "price": 23805 }, { "name": "GRUNT ZESTAW 9,0 KWP RISEN 450w + DEYE 3F", "price": 24500 }, { "name": "GRUNT ZESTAW 9,45 KWP RISEN 450w + DEYE 3F", "price": 25255 }, { "name": "GRUNT ZESTAW 9,9 KWP RISEN 450w + DEYE 3F", "price": 26040 }, { "name": "GRUNT ZESTAW 10,35 KWP RISEN 450w + DEYE 3F", "price": 26765 }, { "name": "GRUNT ZESTAW 10,8 KWP RISEN 450w + DEYE 3F", "price": 27380 }, { "name": "GRUNT ZESTAW 11,25 KWP RISEN 450w + DEYE 3F", "price": 28045 }, { "name": "GRUNT ZESTAW 11,7 KWP RISEN 450w + DEYE 3F", "price": 28800 }, { "name": "GRUNT ZESTAW 12,15 KWP RISEN 450w + DEYE 3F", "price": 29595 }, { "name": "GRUNT ZESTAW 12,6 KWP RISEN 450w + DEYE 3F", "price": 30280 }, { "name": "GRUNT ZESTAW 13,05 KWP RISEN 450w + DEYE 3F", "price": 31015 }, { "name": "GRUNT ZESTAW 13,5 KWP RISEN 450w + DEYE 3F", "price": 31700 }, { "name": "GRUNT ZESTAW 13,95 KWP RISEN 450w + DEYE 3F", "price": 32500 }, { "name": "GRUNT ZESTAW 14,4 KWP RISEN 450w + DEYE 3F", "price": 33300 }, { "name": "GRUNT ZESTAW 14,85 KWP RISEN 450w + DEYE 3F", "price": 34100 }, { "name": "GRUNT ZESTAW 15,3 KWP RISEN 450w + DEYE 3F", "price": 34900 }, { "name": "GRUNT ZESTAW 16,2 KWP RISEN 450w + DEYE 3F", "price": 35700 }, { "name": "GRUNT ZESTAW 117,1 KWP RISEN 450w + DEYE 3F", "price": 36500 }, { "name": "GRUNT ZESTAW 18,0 KWP RISEN 450w + DEYE 3F", "price": 37300 }, { "name": "GRUNT ZESTAW 18,9 KWP RISEN 450w + DEYE 3F", "price": 38100 }, { "name": "GRUNT ZESTAW 19,8 KWP RISEN 450w + DEYE 3F", "price": 38900 }
-            ]
-        },
-        "zestawy_niskonapieciowe": {
-            "TRAPEZ": [
-                { "name": "TRAPEZ ZESTAW 3,15 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 24060 }, { "name": "TRAPEZ ZESTAW 3,6 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 24540 }, { "name": "TRAPEZ ZESTAW 4,05 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 25700 }, { "name": "TRAPEZ ZESTAW 4,5 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 26450 }, { "name": "TRAPEZ ZESTAW 4,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 27190 }, { "name": "TRAPEZ ZESTAW 5,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 27920 }, { "name": "TRAPEZ ZESTAW 5,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 28640 }, { "name": "TRAPEZ ZESTAW 6,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 29350 }, { "name": "TRAPEZ ZESTAW 6,75 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 30050 }, { "name": "TRAPEZ ZESTAW 7,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 30740 }, { "name": "TRAPEZ ZESTAW 7,65 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 31320 }, { "name": "TRAPEZ ZESTAW 8,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 31850 }, { "name": "TRAPEZ ZESTAW 8,55 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 32340 }, { "name": "TRAPEZ ZESTAW 9,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 32900 }, { "name": "TRAPEZ ZESTAW 9,45 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 33520 }, { "name": "TRAPEZ ZESTAW 9,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34170 }, { "name": "TRAPEZ ZESTAW 10,35 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34760 }, { "name": "TRAPEZ ZESTAW 10,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 35240 }, { "name": "TRAPEZ ZESTAW 11,25 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 35770 }, { "name": "TRAPEZ ZESTAW 11,7 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 36390 }, { "name": "TRAPEZ ZESTAW 12,15 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 37050 }, { "name": "TRAPEZ ZESTAW 12,6 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 37600 }, { "name": "TRAPEZ ZESTAW 13,05 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 38200 }, { "name": "TRAPEZ ZESTAW 13,5 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 38750 }, { "name": "TRAPEZ ZESTAW 13,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 39350 }, { "name": "TRAPEZ ZESTAW 14,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 39950 }, { "name": "TRAPEZ ZESTAW 14,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 40550 }, { "name": "TRAPEZ ZESTAW 15,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 41150 }, { "name": "TRAPEZ ZESTAW 16,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 41750 }, { "name": "TRAPEZ ZESTAW 17,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42350 }, { "name": "TRAPEZ ZESTAW 18,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42950 }, { "name": "TRAPEZ ZESTAW 18,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 43550 }, { "name": "TRAPEZ ZESTAW 19,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 44150 }
-            ],
-            "BLACHODACHÓWKA": [
-                { "name": "BLACHODACHÓWKA ZESTAW 3,15 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 24496.10 }, { "name": "BLACHODACHÓWKA ZESTAW 3,6 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 25038.40 }, { "name": "BLACHODACHÓWKA ZESTAW 4,05 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 26260.70 }, { "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 27073.00 }, { "name": "BLACHODACHÓWKA ZESTAW 4,95 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 27875.30 }, { "name": "BLACHODACHÓWKA ZESTAW 5,4 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 28667.60 }, { "name": "BLACHODACHÓWKA ZESTAW 5,85 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 29449.90 }, { "name": "BLACHODACHÓWKA ZESTAW 6,3 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 30222.20 }, { "name": "BLACHODACHÓWKA ZESTAW 6,75 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 30984.50 }, { "name": "BLACHODACHÓWKA ZESTAW 7,2 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 31736.80 }, { "name": "BLACHODACHÓWKA ZESTAW 7,65 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 32379.10 }, { "name": "BLACHODACHÓWKA ZESTAW 8,1 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 32971.40 }, { "name": "BLACHODACHÓWKA ZESTAW 8,55 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 33523.70 }, { "name": "BLACHODACHÓWKA ZESTAW 9,0 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34146.00 }, { "name": "BLACHODACHÓWKA ZESTAW 9,45 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34828.30 }, { "name": "BLACHODACHÓWKAZESTAW 9,9 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 35540.60 }, { "name": "BLACHODACHÓWKA ZESTAW 10,35 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 36192.90 }, { "name": "BLACHODACHÓWKA ZESTAW 10,8 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 36735.20 }, { "name": "BLACHODACHÓWKA ZESTAW 11,25 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 37327.50 }, { "name": "BLACHODACHÓWKA ZESTAW 11,7 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 38009.80 }, { "name": "BLACHODACHÓWKA ZESTAW 12,15 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 38732.10 }, { "name": "BLACHODACHÓWKA ZESTAW 12,6 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 39344.40 }, { "name": "BLACHODACHÓWKA ZESTAW 13,05 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 40006.70 }, { "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 40619.00 }, { "name": "BLACHODACHÓWKA ZESTAW 13,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 41239 }, { "name": "BLACHODACHÓWKA ZESTAW 14,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 41859 }, { "name": "BLACHODACHÓWKA ZESTAW 14,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42479 }, { "name": "BLACHODACHÓWKA ZESTAW 15,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 43099 }, { "name": "BLACHODACHÓWKA ZESTAW 16,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 43719 }, { "name": "BLACHODACHÓWKA ZESTAW 17,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 44339 }, { "name": "BLACHODACHÓWKA ZESTAW 18,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 44959 }, { "name": "BLACHODACHÓWKA ZESTAW 18,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 45579 }, { "name": "BLACHODACHÓWKA ZESTAW 19,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 46199 }
-            ],
-            "DACHÓWKA": [
-                { "name": "DACHÓWKA ZESTAW 3,15 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 24683 }, { "name": "DACHÓWKA ZESTAW 3,6 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 25252 }, { "name": "DACHÓWKA ZESTAW 4,05 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 26501 }, { "name": "DACHÓWKA ZESTAW 4,5 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 27340 }, { "name": "DACHÓWKA ZESTAW 4,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 28169 }, { "name": "DACHÓWKA ZESTAW 5,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 28988 }, { "name": "DACHÓWKA ZESTAW 5,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 29797 }, { "name": "DACHÓWKA ZESTAW 6,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 30596 }, { "name": "DACHÓWKA ZESTAW 6,75 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 31385 }, { "name": "DACHÓWKA ZESTAW 7,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 32164 }, { "name": "DACHÓWKA ZESTAW 7,65 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 32833 }, { "name": "DACHÓWKA ZESTAW 8,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 33452 }, { "name": "DACHÓWKA ZESTAW 8,55 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34031 }, { "name": "DACHÓWKA ZESTAW 9,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34680 }, { "name": "DACHÓWKA ZESTAW 9,45 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 35389 }, { "name": "DACHÓWKA ZESTAW 9,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 36128 }, { "name": "DACHÓWKA ZESTAW 10,35 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 36807 }, { "name": "DACHÓWKA ZESTAW 10,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 37376 }, { "name": "DACHÓWKA ZESTAW 11,25 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 37995 }, { "name": "DACHÓWKA ZESTAW 11,7 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 38704 }, { "name": "DACHÓWKA ZESTAW 12,15 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 39453 }, { "name": "DACHÓWKA ZESTAW 12,6 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 40092 }, { "name": "DACHÓWKA ZESTAW 13,05 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 40781 }, { "name": "DACHÓWKA ZESTAW 13,5 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 41420 }, { "name": "DACHÓWKA ZESTAW 13,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42070 }, { "name": "DACHÓWKA ZESTAW 14,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42720 }, { "name": "DACHÓWKA ZESTAW 14,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 43370 }, { "name": "DACHÓWKA ZESTAW 15,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 44020 }, { "name": "DACHÓWKA ZESTAW 16,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 44670 }, { "name": "DACHÓWKA ZESTAW 17,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 45320 }, { "name": "DACHÓWKA ZESTAW 18,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 45970 }, { "name": "DACHÓWKA ZESTAW 18,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 46620 }, { "name": "DACHÓWKA ZESTAW 19,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 47270 }
-            ],
-            "EKIERKI": [
-                { "name": "EKIERKI INWAZYJNE ZESTAW 3,15 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 24838.75 }, { "name": "EKIERKI INWAZYJNE ZESTAW 3,6 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 25430 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,05 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 26701.25 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 27562.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,95 KWP RISEN 450W + DEYE 3F + magazyn Felicity 5,12kWh", "price": 28413.75 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,4 KWP RISEN 450W + DEYE 3F", "price": 29255 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,85 KWP RISEN 450W + DEYE 3F", "price": 30086.25 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,3 KWP RISEN 450W + DEYE 3F", "price": 30907.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,75 KWP RISEN 450W + DEYE 3F", "price": 31585.25 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,2 KWP RISEN 450W + DEYE 3F", "price": 32377.60 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,65 KWP RISEN 450W + DEYE 3F", "price": 33059.95 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,1 KWP RISEN 450W + DEYE 3F", "price": 33692.30 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,55 KWP RISEN 450W + DEYE 3F", "price": 34284.65 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,0 KWP RISEN 450W + DEYE 3F", "price": 34947 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,45 KWP RISEN 450W + DEYE 3F", "price": 35669.35 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,9 KWP RISEN 450W + DEYE 3F", "price": 36421.70 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,35 KWP RISEN 450W + DEYE 3F", "price": 37114.05 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,8 KWP RISEN 450W + DEYE 3F", "price": 37696.40 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,25 KWP RISEN 450W + DEYE 3F", "price": 38328.75 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,7 KWP RISEN 450W + DEYE 3F", "price": 41051.10 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,15 KWP RISEN 450W + DEYE 3F", "price": 41813.45 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,6 KWP RISEN 450W + DEYE 3F", "price": 42465.80 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,05 KWP RISEN 450W + DEYE 3F", "price": 43168.15 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP RISEN 450W + DEYE 3F", "price": 43820.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42520.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 43220.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 43920.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 15,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 44620.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 16,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 45320.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 117,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 46020.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 46720.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 47420.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 19,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 48120.50 }
-            ],
-            "GRUNT": [
-                { "name": "GRUNT ZESTAW 3,15 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 25381.40 }, { "name": "GRUNT ZESTAW 3,6 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 26021.60 }, { "name": "GRUNT ZESTAW 4,05 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 27341.80 }, { "name": "GRUNT ZESTAW 4,5 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 28252 }, { "name": "GRUNT ZESTAW 4,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 29152.20 }, { "name": "GRUNT ZESTAW 5,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 30042.40 }, { "name": "GRUNT ZESTAW 5,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 30922.60 }, { "name": "GRUNT ZESTAW 6,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 31792.80 }, { "name": "GRUNT ZESTAW 6,75 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 32653 }, { "name": "GRUNT ZESTAW 7,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 33503.20 }, { "name": "GRUNT ZESTAW 7,65 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34092.10 }, { "name": "GRUNT ZESTAW 8,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 34773.40 }, { "name": "GRUNT ZESTAW 8,55 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 35076.50 }, { "name": "GRUNT ZESTAW 9,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 35770 }, { "name": "GRUNT ZESTAW 9,45 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 36523.50 }, { "name": "GRUNT ZESTAW 9,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 37307 }, { "name": "GRUNT ZESTAW 10,35 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 38030.50 }, { "name": "GRUNT ZESTAW 10,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 38644 }, { "name": "GRUNT ZESTAW 11,25 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 39307.50 }, { "name": "GRUNT ZESTAW 11,7 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 40061 }, { "name": "GRUNT ZESTAW 12,15 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 40854.50 }, { "name": "GRUNT ZESTAW 12,6 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 41538 }, { "name": "GRUNT ZESTAW 13,05 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42271.50 }, { "name": "GRUNT ZESTAW 13,5 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 42955 }, { "name": "GRUNT ZESTAW 13,95 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 43755 }, { "name": "GRUNT ZESTAW 14,4 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 44505 }, { "name": "GRUNT ZESTAW 14,85 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 45255 }, { "name": "GRUNT ZESTAW 15,3 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 46005 }, { "name": "GRUNT ZESTAW 16,2 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 46755 }, { "name": "GRUNT ZESTAW 17,1 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 47505 }, { "name": "GRUNT ZESTAW 18,0 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 48255 }, { "name": "GRUNT ZESTAW 18,9 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 49005 }, { "name": "GRUNT ZESTAW 19,8 KWP RISEN 450w + DEYE 3F + magazyn Felicity 5,12kWh", "price": 49755 } ]
-        },
-        "zestawy_wysokonapieciowe": {
-            "TRAPEZ": [
-                { "name": "TRAPEZ ZESTAW 3,15 KWP RISEN 450W + GOODWE 3F", "price": 27660.00 }, { "name": "TRAPEZ ZESTAW 3,6 KWP RISEN 450W + GOODWE 3F", "price": 28140.00 }, { "name": "TRAPEZ ZESTAW 4,05 KWP RISEN 450W + GOODWE 3F", "price": 29100.00 }, { "name": "TRAPEZ ZESTAW 4,5 KWP RISEN 450W + GOODWE 3F", "price": 29850.00 }, { "name": "TRAPEZ ZESTAW 4,95 KWP RISEN 450W + GOODWE 3F", "price": 30590.00 }, { "name": "TRAPEZ ZESTAW 5,4 KWP RISEN 450W + GOODWE 3F", "price": 31320.00 }, { "name": "TRAPEZ ZESTAW 5,85 KWP RISEN 450W + GOODWE 3F", "price": 32040.00 }, { "name": "TRAPEZ ZESTAW 6,3 KWP RISEN 450W + GOODWE 3F", "price": 32750.00 }, { "name": "TRAPEZ ZESTAW 6,75 KWP RISEN 450W + GOODWE 3F", "price": 33450.00 }, { "name": "TRAPEZ ZESTAW 7,2 KWP RISEN 450W + GOODWE 3F", "price": 34140.00 }, { "name": "TRAPEZ ZESTAW 7,65 KWP RISEN 450W + GOODWE 3F", "price": 34820.00 }, { "name": "TRAPEZ ZESTAW 8,1 KWP RISEN 450W + GOODWE 3F", "price": 35350.00 }, { "name": "TRAPEZ ZESTAW 8,55 KWP RISEN 450W + GOODWE 3F", "price": 35840.00 }, { "name": "TRAPEZ ZESTAW 9,0 KWP RISEN 450W + GOODWE 3F", "price": 36400.00 }, { "name": "TRAPEZ ZESTAW 9,45 KWP RISEN 450W + GOODWE 3F", "price": 37020.00 }, { "name": "TRAPEZ ZESTAW 9,9 KWP RISEN 450W + GOODWE 3F", "price": 37670.00 }, { "name": "TRAPEZ ZESTAW 10,35 KWP RISEN 450W + GOODWE 3F", "price": 38260.00 }, { "name": "TRAPEZ ZESTAW 10,8 KWP RISEN 450W + GOODWE 3F", "price": 38740.00 }, { "name": "TRAPEZ ZESTAW 11,25 KWP RISEN 450W + GOODWE 3F", "price": 39270.00 }, { "name": "TRAPEZ ZESTAW 11,7 KWP RISEN 450W +GOODWE 3F", "price": 39890.00 }, { "name": "TRAPEZ ZESTAW 12,15 KWP RISEN 450W + GOODWE 3F", "price": 40550.00 }, { "name": "TRAPEZ ZESTAW 12,6 KWP RISEN 450W + GOODWE 3F", "price": 41100.00 }, { "name": "TRAPEZ ZESTAW 13,05 KWP RISEN 450W + GOODWE 3F", "price": 41700.00 }, { "name": "TRAPEZ ZESTAW 13,5 KWP RISEN 450W + GOODWE 3F", "price": 42250.00 }, { "name": "TRAPEZ ZESTAW 13,95 KWP RISEN 450w +GOODWE 3F", "price": 42850.00 }, { "name": "TRAPEZ ZESTAW 14,4 KWP RISEN 450w + GOODWE 3F", "price": 43450.00 }, { "name": "TRAPEZ ZESTAW 14,85 KWP RISEN 450w + GOODWE 3F", "price": 44050.00 }, { "name": "TRAPEZ ZESTAW 15,3 KWP RISEN 450w + GOODWE 3F", "price": 44650.00 }, { "name": "TRAPEZ ZESTAW 16,2 KWP RISEN 450w +GOODWE 3F", "price": 45250.00 }, { "name": "TRAPEZ ZESTAW 17,1 KWP RISEN 450w + GOODWE 3F", "price": 45850.00 }, { "name": "TRAPEZ ZESTAW 18,0 KWP RISEN 450w + GOODWE 3F", "price": 46450.00 }, { "name": "TRAPEZ ZESTAW 18,9 KWP RISEN 450w +GOODWE 3F", "price": 47050.00 }, { "name": "TRAPEZ ZESTAW 19,8 KWP RISEN 450w + GOODWE 3F", "price": 47650.00 }
-            ],
-            "BLACHODACHÓWKA": [
-                { "name": "BLACHODACHÓWKA ZESTAW 3,15 KWP RISEN 450W + GOODWE 3F", "price": 27851.00 }, { "name": "BLACHODACHÓWKA ZESTAW 3,6 KWP RISEN 450W + GOODWE 3F", "price": 28394.00 }, { "name": "BLACHODACHÓWKA ZESTAW 4,05 KWP RISEN 450W + GOODWE 3F", "price": 29417.00 }, { "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP RISEN 450W + GOODWE 3F", "price": 30230.00 }, { "name": "BLACHODACHÓWKA ZESTAW 4,95 KWP RISEN 450W + GOODWE 3F", "price": 31033.00 }, { "name": "BLACHODACHÓWKA ZESTAW 5,4 KWP RISEN 450W + GOODWE 3F", "price": 31826.00 }, { "name": "BLACHODACHÓWKA ZESTAW 5,85 KWP RISEN 450W + GOODWE 3F", "price": 32609.00 }, { "name": "BLACHODACHÓWKA ZESTAW 6,3 KWP RISEN 450W + GOODWE 3F", "price": 33382.00 }, { "name": "BLACHODACHÓWKA ZESTAW 6,75 KWP RISEN 450W + GOODWE 3F", "price": 34145.00 }, { "name": "BLACHODACHÓWKA ZESTAW 7,2 KWP RISEN 450W + GOODWE 3F", "price": 34898.00 }, { "name": "BLACHODACHÓWKA ZESTAW 7,65 KWP RISEN 450W + GOODWE 3F", "price": 35641.00 }, { "name": "BLACHODACHÓWKA ZESTAW 8,1 KWP RISEN 450W + GOODWE 3F", "price": 36234.00 }, { "name": "BLACHODACHÓWKA ZESTAW 8,55 KWP RISEN 450W + GOODWE 3F", "price": 36787.00 }, { "name": "BLACHODACHÓWKA ZESTAW 9,0 KWP RISEN 450W + GOODWE 3F", "price": 37410.00 }, { "name": "BLACHODACHÓWKA ZESTAW 9,45 KWP RISEN 450W + GOODWE 3F", "price": 38093.00 }, { "name": "BLACHODACHÓWKAZESTAW 9,9 KWP RISEN 450W + GOODWE 3F", "price": 38806.00 }, { "name": "BLACHODACHÓWKA ZESTAW 10,35 KWP RISEN 450W + GOODWE 3F", "price": 39459.00 }, { "name": "BLACHODACHÓWKA ZESTAW 10,8 KWP RISEN 450W + GOODWE 3F", "price": 40002.00 }, { "name": "BLACHODACHÓWKA ZESTAW 11,25 KWP RISEN 450W + GOODWE 3F", "price": 40595.00 }, { "name": "BLACHODACHÓWKA ZESTAW 11,7 KWP RISEN 450W + GOODWE 3F", "price": 41278.00 }, { "name": "BLACHODACHÓWKA ZESTAW 12,15 KWP RISEN 450W + GOODWE 3F", "price": 42001.00 }, { "name": "BLACHODACHÓWKA ZESTAW 12,6 KWP RISEN 450W + GOODWE 3F", "price": 42614.00 }, { "name": "BLACHODACHÓWKA ZESTAW 13,05 KWP RISEN 450W + GOODWE 3F", "price": 43277.00 }, { "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP RISEN 450W + GOODWE 3F", "price": 43890.00 }, { "name": "BLACHODACHÓWKA ZESTAW 13,95 KWP RISEN 450w +GOODWE 3F", "price": 44510.00 }, { "name": "BLACHODACHÓWKA ZESTAW 14,4 KWP RISEN 450w + GOODWE 3F", "price": 45130.00 }, { "name": "BLACHODACHÓWKA ZESTAW 14,85 KWP RISEN 450w + GOODWE 3F", "price": 45750.00 }, { "name": "BLACHODACHÓWKA ZESTAW 15,3 KWP RISEN 450w + GOODWE 3F", "price": 46370.00 }, { "name": "BLACHODACHÓWKA ZESTAW 16,2 KWP RISEN 450w + GOODWE 3F", "price": 46990.00 }, { "name": "BLACHODACHÓWKA ZESTAW 17,1 KWP RISEN 450w + GOODWE 3F", "price": 47610.00 }, { "name": "BLACHODACHÓWKA ZESTAW 18,0 KWP RISEN 450w + GOODWE 3F", "price": 48230.00 }, { "name": "BLACHODACHÓWKA ZESTAW 18,9 KWP RISEN 450w + GOODWE 3F", "price": 48850.00 }, { "name": "BLACHODACHÓWKA ZESTAW 19,8 KWP RISEN 450w + GOODWE 3F", "price": 49470.00 }
-            ],
-            "DACHÓWKA": [
-                { "name": "DACHÓWKA ZESTAW 3,15 KWP RISEN 450w + GOODWE 3F", "price": 27940.00 }, { "name": "DACHÓWKA ZESTAW 3,6 KWP RISEN 450w + GOODWE 3F", "price": 28510.00 }, { "name": "DACHÓWKA ZESTAW 4,05 KWP RISEN 450w + GOODWE 3F", "price": 29560.00 }, { "name": "DACHÓWKA ZESTAW 4,5 KWP RISEN 450w + GOODWE 3F", "price": 30400.00 }, { "name": "DACHÓWKA ZESTAW 4,95 KWP RISEN 450w + GOODWE 3F", "price": 31230.00 }, { "name": "DACHÓWKA ZESTAW 5,4 KWP RISEN 450w + GOODWE 3F", "price": 32050.00 }, { "name": "DACHÓWKA ZESTAW 5,85 KWP RISEN 450w + GOODWE 3F", "price": 32860.00 }, { "name": "DACHÓWKA ZESTAW 6,3 KWP RISEN 450w + GOODWE 3F", "price": 33660.00 }, { "name": "DACHÓWKA ZESTAW 6,75 KWP RISEN 450w + GOODWE 3F", "price": 34450.00 }, { "name": "DACHÓWKA ZESTAW 7,2 KWP RISEN 450w + GOODWE 3F", "price": 35230.00 }, { "name": "DACHÓWKA ZESTAW 7,65 KWP RISEN 450w + GOODWE 3F", "price": 36000.00 }, { "name": "DACHÓWKA ZESTAW 8,1 KWP RISEN 450w + GOODWE 3F", "price": 36620.00 }, { "name": "DACHÓWKA ZESTAW 8,55 KWP RISEN 450w + GOODWE 3F", "price": 37200.00 }, { "name": "DACHÓWKA ZESTAW 9,0 KWP RISEN 450w + GOODWE 3F", "price": 37850.00 }, { "name": "DACHÓWKA ZESTAW 9,45 KWP RISEN 450w + GOODWE 3F", "price": 38560.00 }, { "name": "DACHÓWKA ZESTAW 9,9 KWP RISEN 450w + GOODWE 3F", "price": 39300.00 }, { "name": "DACHÓWKA ZESTAW 10,35 KWP RISEN 450w + GOODWE 3F", "price": 39980.00 }, { "name": "DACHÓWKA ZESTAW 10,8 KWP RISEN 450w + GOODWE 3F", "price": 40550.00 }, { "name": "DACHÓWKA ZESTAW 11,25 KWP RISEN 450w + GOODWE 3F", "price": 41170.00 }, { "name": "DACHÓWKA ZESTAW 11,7 KWP RISEN 450w + GOODWE 3F", "price": 41880.00 }, { "name": "DACHÓWKA ZESTAW 12,15 KWP RISEN 450w + GOODWE 3F", "price": 42630.00 }, { "name": "DACHÓWKA ZESTAW 12,6 KWP RISEN 450w + GOODWE 3F", "price": 43270.00 }, { "name": "DACHÓWKA ZESTAW 13,05 KWP RISEN 450w + GOODWE 3F", "price": 43960.00 }, { "name": "DACHÓWKA ZESTAW 13,5 KWP RISEN 450w + GOODWE 3F", "price": 44600.00 }, { "name": "DACHÓWKA ZESTAW 13,95 KWP RISEN 450w + GOODWE 3F", "price": 45250.00 }, { "name": "DACHÓWKA ZESTAW 14,4 KWP RISEN 450w + GOODWE 3F", "price": 45900.00 }, { "name": "DACHÓWKA ZESTAW 14,85 KWP RISEN 450w + GOODWE 3F", "price": 46550.00 }, { "name": "DACHÓWKA ZESTAW 15,3 KWP RISEN 450w + GOODWE 3F", "price": 47200.00 }, { "name": "DACHÓWKA ZESTAW 16,2 KWP RISEN 450w + GOODWE 3F", "price": 47850.00 }, { "name": "DACHÓWKA ZESTAW 17,1 KWP RISEN 450w + GOODWE 3F", "price": 48500.00 }, { "name": "DACHÓWKA ZESTAW 18,0 KWP RISEN 450w+ GOODWE 3F", "price": 49150.00 }, { "name": "DACHÓWKA ZESTAW 18,9 KWP RISEN 450w + GOODWE 3F", "price": 49800.00 }, { "name": "DACHÓWKA ZESTAW 19,8 KWP RISEN 450w + GOODWE 3F", "price": 50450.00 }
-            ],
-            "EKIERKI": [
-                { "name": "EKIERKI INWAZYJNE ZESTAW 3,15 KWP RISEN 450w + GOODWE 3F", "price": 28047.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 3,6 KWP RISEN 450w + GOODWE 3F", "price": 28640.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,05 KWP RISEN 450w + GOODWE 3F", "price": 29712.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP RISEN 450w + GOODWE 3F", "price": 30575.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,95 KWP RISEN 450w + GOODWE 3F", "price": 31427.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,4 KWP RISEN 450w + GOODWE 3F", "price": 32270.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,85 KWP RISEN 450w + GOODWE 3F", "price": 33102.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,3 KWP RISEN 450w + GOODWE 3F", "price": 33925.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,75 KWP RISEN 450w + GOODWE 3F", "price": 34602.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,2 KWP RISEN 450w + GOODWE 3F", "price": 35396.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,65 KWP RISEN 450w + GOODWE 3F", "price": 36179.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,1 KWP RISEN 450w + GOODWE 3F", "price": 36813.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,55 KWP RISEN 450w + GOODWE 3F", "price": 37406.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,0 KWP RISEN 450w + GOODWE 3F", "price": 38070.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,45 KWP RISEN 450w + GOODWE 3F", "price": 38793.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,9 KWP RISEN 450w + GOODWE 3F", "price": 39547.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,35 KWP RISEN 450w + GOODWE 3F", "price": 40240.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,8 KWP RISEN 450w + GOODWE 3F", "price": 40824.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,25 KWP RISEN 450w + GOODWE 3F", "price": 41457.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,7 KWP RISEN 450w + GOODWE 3F", "price": 42181.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,15 KWP RISEN 450w + GOODWE 3F", "price": 42944.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,6 KWP RISEN 450w + GOODWE 3F", "price": 43598.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,05 KWP RISEN 450w + GOODWE 3F", "price": 44301.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP RISEN 450w + GOODWE 3F", "price": 44955.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,95 KWP RISEN 450w + GOODWE 3F", "price": 45655.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,4 KWP RISEN 450w + GOODWE 3F", "price": 46355.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,85 KWP RISEN 450w + GOODWE 3F", "price": 47055.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 15,3 KWP RISEN 450w +GOODWE 3F", "price": 47755.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 16,2 KWP RISEN 450w + GOODWE 3F", "price": 48455.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 117,1 KWP RISEN 450w + GOODWE 3F", "price": 49155.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,0 KWP RISEN 450w + GOODWE 3F", "price": 49855.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,9 KWP RISEN 450w + GOODWE 3F", "price": 50555.00 }, { "name": "EKIERKI INWAZYJNE ZESTAW 19,8 KWP RISEN 450w + GOODWE 3F", "price": 51255.00 }
-            ],
-            "GRUNT": [
-                { "name": "GRUNT ZESTAW 3,15 KWP RISEN 450w + GOODWE 3F", "price": 28194.00 }, { "name": "GRUNT ZESTAW 3,6 KWP RISEN 450w + GOODWE 3F", "price": 28836.00 }, { "name": "GRUNT ZESTAW 4,05 KWP RISEN 450w + GOODWE 3F", "price": 29958.00 }, { "name": "GRUNT ZESTAW 4,5 KWP RISEN 450w + GOODWE 3F", "price": 30870.00 }, { "name": "GRUNT ZESTAW 4,95 KWP RISEN 450w + GOODWE 3F", "price": 31772.00 }, { "name": "GRUNT ZESTAW 5,4 KWP RISEN 450w + GOODWE 3F", "price": 32664.00 }, { "name": "GRUNT ZESTAW 5,85 KWP RISEN 450w + GOODWE 3F", "price": 33546.00 }, { "name": "GRUNT ZESTAW 6,3 KWP RISEN 450w + GOODWE 3F", "price": 34418.00 }, { "name": "GRUNT ZESTAW 6,75 KWP RISEN 450w + GOODWE 3F", "price": 35280.00 }, { "name": "GRUNT ZESTAW 7,2 KWP RISEN 450w + GOODWE 3F", "price": 36132.00 }, { "name": "GRUNT ZESTAW 7,65 KWP RISEN 450w + GOODWE 3F", "price": 36821.00 }, { "name": "GRUNT ZESTAW 8,1 KWP RISEN 450w + GOODWE 3F", "price": 37504.00 }, { "name": "GRUNT ZESTAW 8,55 KWP RISEN 450w + GOODWE 3F", "price": 37805.00 }, { "name": "GRUNT ZESTAW 9,0 KWP RISEN 450w + GOODWE 3F", "price": 38500.00 }, { "name": "GRUNT ZESTAW 9,45 KWP RISEN 450w + GOODWE 3F", "price": 39255.00 }, { "name": "GRUNT ZESTAW 9,9 KWP RISEN 450w + GOODWE 3F", "price": 40040.00 }, { "name": "GRUNT ZESTAW 10,35 KWP RISEN 450w + GOODWE 3F", "price": 40765.00 }, { "name": "GRUNT ZESTAW 10,8 KWP RISEN 450w + GOODWE 3F", "price": 41380.00 }, { "name": "GRUNT ZESTAW 11,25 KWP RISEN 450w + GOODWE 3F", "price": 42045.00 }, { "name": "GRUNT ZESTAW 11,7 KWP RISEN 450w + GOODWE 3F", "price": 42800.00 }, { "name": "GRUNT ZESTAW 12,15 KWP RISEN 450w + GOODWE 3F", "price": 43595.00 }, { "name": "GRUNT ZESTAW 12,6 KWP RISEN 450w + GOODWE 3F", "price": 44280.00 }, { "name": "GRUNT ZESTAW 13,05 KWP RISEN 450w + GOODWE 3F", "price": 45015.00 }, { "name": "GRUNT ZESTAW 13,5 KWP RISEN 450w + GOODWE 3F", "price": 45700.00 }, { "name": "GRUNT ZESTAW 13,95 KWP RISEN 450w + GOODWE 3F", "price": 46500.00 }, { "name": "GRUNT ZESTAW 14,4 KWP RISEN 450w + GOODWE 3F", "price": 47250.00 }, { "name": "GRUNT ZESTAW 14,85 KWP RISEN 450w + GOODWE 3F", "price": 48000.00 }, { "name": "GRUNT ZESTAW 15,3 KWP RISEN 450w + GOODWE 3F", "price": 48750.00 }, { "name": "GRUNT ZESTAW 16,2 KWP RISEN 450w + GOODWE 3F", "price": 49500.00 }, { "name": "GRUNT ZESTAW 117,1 KWP RISEN 450w + GOODWE 3F", "price": 50250.00 }, { "name": "GRUNT ZESTAW 18,0 KWP RISEN 450w + GOODWE 3F", "price": 51000.00 }, { "name": "GRUNT ZESTAW 18,9 KWP RISEN 450w + GOODWE 3F", "price": 51750.00 }, { "name": "GRUNT ZESTAW 19,8 KWP RISEN 450w +GOODWE 3F", "price": 52500.00 }
-            ]
-        },
-        "zestawy_premium": {
-            "TRAPEZ": [
-                { "name": "TRAPEZ ZESTAW 3,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 26660 }, { "name": "TRAPEZ ZESTAW 3,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 27140 }, { "name": "TRAPEZ ZESTAW 4,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 28100 }, { "name": "TRAPEZ ZESTAW 4,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 28850 }, { "name": "TRAPEZ ZESTAW 4,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 29590 }, { "name": "TRAPEZ ZESTAW 5,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 30320 }, { "name": "TRAPEZ ZESTAW 5,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 31040 }, { "name": "TRAPEZ ZESTAW 6,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 31750 }, { "name": "TRAPEZ ZESTAW 6,75 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 32450 }, { "name": "TRAPEZ ZESTAW 7,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 33140 }, { "name": "TRAPEZ ZESTAW 7,65 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 33820 }, { "name": "TRAPEZ ZESTAW 8,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 34350 }, { "name": "TRAPEZ ZESTAW 8,55 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 34840 }, { "name": "TRAPEZ ZESTAW 9,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35400 }, { "name": "TRAPEZ ZESTAW 9,45 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36020 }, { "name": "TRAPEZ ZESTAW 9,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36670 }, { "name": "TRAPEZ ZESTAW 10,35 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37260 }, { "name": "TRAPEZ ZESTAW 10,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37740 }, { "name": "TRAPEZ ZESTAW 11,25 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 38270 }, { "name": "TRAPEZ ZESTAW 11,7 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 38890 }, { "name": "TRAPEZ ZESTAW 12,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39550 }, { "name": "TRAPEZ ZESTAW 12,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 40100 }, { "name": "TRAPEZ ZESTAW 13,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 40700 }, { "name": "TRAPEZ ZESTAW 13,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41250 }, { "name": "TRAPEZ ZESTAW 13,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41850 }, { "name": "TRAPEZ ZESTAW 14,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 42450 }, { "name": "TRAPEZ ZESTAW 14,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 43050 }, { "name": "TRAPEZ ZESTAW 15,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 43650 }, { "name": "TRAPEZ ZESTAW 16,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44250 }, { "name": "TRAPEZ ZESTAW 17,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44850 }, { "name": "TRAPEZ ZESTAW 18,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 45450 }, { "name": "TRAPEZ ZESTAW 18,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46050 }, { "name": "TRAPEZ ZESTAW 19,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46650 }
-            ],
-            "BLACHODACHÓWKA": [
-                { "name": "BLACHODACHÓWKA ZESTAW 3,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 26851 }, { "name": "BLACHODACHÓWKA ZESTAW 3,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 27394 }, { "name": "BLACHODACHÓWKA ZESTAW 4,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 28417 }, { "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 29230 }, { "name": "BLACHODACHÓWKA ZESTAW 4,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 30033 }, { "name": "BLACHODACHÓWKA ZESTAW 5,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 30826 }, { "name": "BLACHODACHÓWKA ZESTAW 5,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 31609 }, { "name": "BLACHODACHÓWKA ZESTAW 6,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 32382 }, { "name": "BLACHODACHÓWKA ZESTAW 6,75 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 33145 }, { "name": "BLACHODACHÓWKA ZESTAW 7,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 33898 }, { "name": "BLACHODACHÓWKA ZESTAW 7,65 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 34641 }, { "name": "BLACHODACHÓWKA ZESTAW 8,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35234 }, { "name": "BLACHODACHÓWKA ZESTAW 8,55 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35787 }, { "name": "BLACHODACHÓWKA ZESTAW 9,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36410 }, { "name": "BLACHODACHÓWKA ZESTAW 9,45 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37093 }, { "name": "BLACHODACHÓWKAZESTAW 9,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37806 }, { "name": "BLACHODACHÓWKA ZESTAW 10,35 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 38459 }, { "name": "BLACHODACHÓWKA ZESTAW 10,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39002 }, { "name": "BLACHODACHÓWKA ZESTAW 11,25 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39595 }, { "name": "BLACHODACHÓWKA ZESTAW 11,7 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 40278 }, { "name": "BLACHODACHÓWKA ZESTAW 12,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41001 }, { "name": "BLACHODACHÓWKA ZESTAW 12,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41614 }, { "name": "BLACHODACHÓWKA ZESTAW 13,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 42277 }, { "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 42890 }, { "name": "BLACHODACHÓWKA ZESTAW 13,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 43510 }, { "name": "BLACHODACHÓWKA ZESTAW 14,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44130 }, { "name": "BLACHODACHÓWKA ZESTAW 14,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44750 }, { "name": "BLACHODACHÓWKA ZESTAW 15,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 45370 }, { "name": "BLACHODACHÓWKA ZESTAW 16,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 45990 }, { "name": "BLACHODACHÓWKA ZESTAW 17,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46610 }, { "name": "BLACHODACHÓWKA ZESTAW 18,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 47230 }, { "name": "BLACHODACHÓWKA ZESTAW 18,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 47850 }, { "name": "BLACHODACHÓWKA ZESTAW 19,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 48470 }
-            ],
-            "DACHÓWKA": [
-                { "name": "DACHÓWKA ZESTAW 3,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 26940 }, { "name": "DACHÓWKA ZESTAW 3,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 27510 }, { "name": "DACHÓWKA ZESTAW 4,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 28560 }, { "name": "DACHÓWKA ZESTAW 4,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 29400 }, { "name": "DACHÓWKA ZESTAW 4,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 30230 }, { "name": "DACHÓWKA ZESTAW 5,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 31050 }, { "name": "DACHÓWKA ZESTAW 5,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 31860 }, { "name": "DACHÓWKA ZESTAW 6,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 32660 }, { "name": "DACHÓWKA ZESTAW 6,75 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 33450 }, { "name": "DACHÓWKA ZESTAW 7,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 34230 }, { "name": "DACHÓWKA ZESTAW 7,65 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35000 }, { "name": "DACHÓWKA ZESTAW 8,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35620 }, { "name": "DACHÓWKA ZESTAW 8,55 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36200 }, { "name": "DACHÓWKA ZESTAW 9,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36850 }, { "name": "DACHÓWKA ZESTAW 9,45 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37560 }, { "name": "DACHÓWKA ZESTAW 9,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 38300 }, { "name": "DACHÓWKA ZESTAW 10,35 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 38980 }, { "name": "DACHÓWKA ZESTAW 10,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39550 }, { "name": "DACHÓWKA ZESTAW 11,25 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 40170 }, { "name": "DACHÓWKA ZESTAW 11,7 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 40880 }, { "name": "DACHÓWKA ZESTAW 12,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41630 }, { "name": "DACHÓWKA ZESTAW 12,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 42270 }, { "name": "DACHÓWKA ZESTAW 13,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 42960 }, { "name": "DACHÓWKA ZESTAW 13,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 43600 }, { "name": "DACHÓWKA ZESTAW 13,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44250 }, { "name": "DACHÓWKA ZESTAW 14,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44900 }, { "name": "DACHÓWKA ZESTAW 14,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 45550 }, { "name": "DACHÓWKA ZESTAW 15,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46200 }, { "name": "DACHÓWKA ZESTAW 16,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46850 }, { "name": "DACHÓWKA ZESTAW 17,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 47500 }, { "name": "DACHÓWKA ZESTAW 18,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 48150 }, { "name": "DACHÓWKA ZESTAW 18,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 48800 }, { "name": "DACHÓWKA ZESTAW 19,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 49450 }
-            ],
-            "EKIERKI": [
-                { "name": "EKIERKI INWAZYJNE ZESTAW 3,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 27047.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 3,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 27640 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 28712.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 29575 }, { "name": "EKIERKI INWAZYJNE ZESTAW 4,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 30427.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 31270 }, { "name": "EKIERKI INWAZYJNE ZESTAW 5,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 32102.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 32925 }, { "name": "EKIERKI INWAZYJNE ZESTAW 6,75 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 33602.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 34396 }, { "name": "EKIERKI INWAZYJNE ZESTAW 7,65 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35179.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35813 }, { "name": "EKIERKI INWAZYJNE ZESTAW 8,55 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36406.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37070 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,45 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37793.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 9,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 38547 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,35 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39240.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 10,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39824 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,25 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 40457.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 11,7 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41181 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41944.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 12,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 42598 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 43301.50 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 43955 }, { "name": "EKIERKI INWAZYJNE ZESTAW 13,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44655 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 45355 }, { "name": "EKIERKI INWAZYJNE ZESTAW 14,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46055 }, { "name": "EKIERKI INWAZYJNE ZESTAW 15,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46755 }, { "name": "EKIERKI INWAZYJNE ZESTAW 16,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 47455 }, { "name": "EKIERKI INWAZYJNE ZESTAW 17,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 48155 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 48855 }, { "name": "EKIERKI INWAZYJNE ZESTAW 18,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 49555 }, { "name": "EKIERKI INWAZYJNE ZESTAW 19,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 50255 }
-            ],
-            "GRUNT": [
-                { "name": "GRUNT ZESTAW 3,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 27194 }, { "name": "GRUNT ZESTAW 3,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 27836 }, { "name": "GRUNT ZESTAW 4,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 28958 }, { "name": "GRUNT ZESTAW 4,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 29870 }, { "name": "GRUNT ZESTAW 4,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 30772 }, { "name": "GRUNT ZESTAW 5,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 31664 }, { "name": "GRUNT ZESTAW 5,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 32546 }, { "name": "GRUNT ZESTAW 6,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 33418 }, { "name": "GRUNT ZESTAW 6,75 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 34280 }, { "name": "GRUNT ZESTAW 7,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35132 }, { "name": "GRUNT ZESTAW 7,65 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 35821 }, { "name": "GRUNT ZESTAW 8,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36504 }, { "name": "GRUNT ZESTAW 8,55 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 36805 }, { "name": "GRUNT ZESTAW 9,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 37500 }, { "name": "GRUNT ZESTAW 9,45 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 38255 }, { "name": "GRUNT ZESTAW 9,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39040 }, { "name": "GRUNT ZESTAW 10,35 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 39765 }, { "name": "GRUNT ZESTAW 10,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 40380 }, { "name": "GRUNT ZESTAW 11,25 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41045 }, { "name": "GRUNT ZESTAW 11,7 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 41800 }, { "name": "GRUNT ZESTAW 12,15 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 42595 }, { "name": "GRUNT ZESTAW 12,6 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 43280 }, { "name": "GRUNT ZESTAW 13,05 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44015 }, { "name": "GRUNT ZESTAW 13,5 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 44700 }, { "name": "GRUNT ZESTAW 13,95 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 45500 }, { "name": "GRUNT ZESTAW 14,4 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 46250 }, { "name": "GRUNT ZESTAW 14,85 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 47000 }, { "name": "GRUNT ZESTAW 15,3 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 47750 }, { "name": "GRUNT ZESTAW 16,2 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 48500 }, { "name": "GRUNT ZESTAW 17,1 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 49250 }, { "name": "GRUNT ZESTAW 18,0 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 50000 }, { "name": "GRUNT ZESTAW 18,9 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 50750 }, { "name": "GRUNT ZESTAW 19,8 KWP RISEN 450w + Sigen Hybrid TP2 ( PSTRYK!)", "price": 51500 }
-            ]
-        } 
-    };
+    "zestawy_sieciowe": {
+        "TRAPEZ": [
+            {
+                "name": "TRAPEZ ZESTAW 3 KWP TCL 500 + DEYE 1F",
+                "price": 13060
+            },
+            {
+                "name": "TRAPEZ ZESTAW 3,5 KWP TCL 500 + DEYE 1F",
+                "price": 13960
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4 KWP TCL 500 + DEYE 1F",
+                "price": 14860
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4,5 KWP TCL 500 + DEYE 3F",
+                "price": 15760
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5 KWP TCL 500 + DEYE 3F",
+                "price": 16660
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5,5 KWP TCL 500 + DEYE 3F",
+                "price": 17560
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6 KWP TCL 500 + DEYE 3F",
+                "price": 18360
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6,5 KWP TCL 500 + DEYE 3F",
+                "price": 19160
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7 KWP TCL 500 + DEYE 3F",
+                "price": 19960
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7,5 KWP TCL 500 + DEYE 3F",
+                "price": 20710
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8 KWP TCL 500 + DEYE 3F",
+                "price": 21510
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8,5 KWP TCL 500 + DEYE 3F",
+                "price": 22310
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9 KWP TCL 500 + DEYE 3F",
+                "price": 23060
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9,5 KWP TCL 500 + DEYE 3F",
+                "price": 23860
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10 KWP TCL 500 + DEYE 3F",
+                "price": 24560
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10,5 KWP TCL 500 + DEYE 3F",
+                "price": 25260
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11 KWP TCL 500 + DEYE 3F",
+                "price": 25960
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11,5 KWP TCL 500 + DEYE 3F",
+                "price": 26610
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12 KWP TCL 500 + DEYE 3F",
+                "price": 27260
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12,5 KWP TCL 500 + DEYE 3F",
+                "price": 27910
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13 KWP TCL 500 + DEYE 3F",
+                "price": 28560
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13,5 KWP TCL 500 + DEYE 3F",
+                "price": 29210
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14 KWP TCL 500 + DEYE 3F",
+                "price": 29860
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14,5 KWP TCL 500 + DEYE 3F",
+                "price": 30510
+            },
+            {
+                "name": "TRAPEZ ZESTAW 15 KWP TCL 500 + DEYE 3F",
+                "price": 31160
+            }
+        ],
+        "BLACHODACHÓWKA": [
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 3 KWP TCL 500 + DEYE 1F",
+                "price": 13501
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 3,5 KWP TCL 500 + DEYE 1F",
+                "price": 14451
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4 KWP TCL 500 + DEYE 1F",
+                "price": 15401
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP TCL 500 + DEYE 3F",
+                "price": 16351
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5 KWP TCL 500 + DEYE 3F",
+                "price": 17271
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5,5 KWP TCL 500 + DEYE 3F",
+                "price": 18191
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6 KWP TCL 500 + DEYE 3F",
+                "price": 19111
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6,5 KWP TCL 500 + DEYE 3F",
+                "price": 19931
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7 KWP TCL 500 + DEYE 3F",
+                "price": 20751
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7,5 KWP TCL 500 + DEYE 3F",
+                "price": 21571
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8 KWP TCL 500 + DEYE 3F",
+                "price": 22391
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8,5 KWP TCL 500 + DEYE 3F",
+                "price": 23211
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9 KWP TCL 500 + DEYE 3F",
+                "price": 24031
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9,5 KWP TCL 500 + DEYE 3F",
+                "price": 24851
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10 KWP TCL 500 + DEYE 3F",
+                "price": 25671
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10,5 KWP TCL 500 + DEYE 3F",
+                "price": 26491
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11 KWP TCL 500 + DEYE 3F",
+                "price": 27311
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11,5 KWP TCL 500 + DEYE 3F",
+                "price": 28131
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12 KWP TCL 500 + DEYE 3F",
+                "price": 28851
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12,5 KWP TCL 500 + DEYE 3F",
+                "price": 29571
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13 KWP TCL 500 + DEYE 3F",
+                "price": 30291
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP TCL 500 + DEYE 3F",
+                "price": 31011
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14 KWP TCL 500 + DEYE 3F",
+                "price": 31731
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14,5 KWP TCL 500 + DEYE 3F",
+                "price": 32451
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 15 KWP TCL 500 + DEYE 3F",
+                "price": 33171
+            }
+        ],
+        "DACHÓWKA": [
+            {
+                "name": "DACHÓWKA ZESTAW 3 KWP TCL 500 + DEYE 1F",
+                "price": 13690
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 3,5 KWP TCL 500 + DEYE 1F",
+                "price": 14610
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4 KWP TCL 500 + DEYE 1F",
+                "price": 15530
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4,5 KWP TCL 500 + DEYE 3F",
+                "price": 16450
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5 KWP TCL 500 + DEYE 3F",
+                "price": 17370
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5,5 KWP TCL 500 + DEYE 3F",
+                "price": 18290
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6 KWP TCL 500 + DEYE 3F",
+                "price": 19210
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6,5 KWP TCL 500 + DEYE 3F",
+                "price": 20070
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7 KWP TCL 500 + DEYE 3F",
+                "price": 20930
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7,5 KWP TCL 500 + DEYE 3F",
+                "price": 21790
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8 KWP TCL 500 + DEYE 3F",
+                "price": 22650
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8,5 KWP TCL 500 + DEYE 3F",
+                "price": 23510
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9 KWP TCL 500 + DEYE 3F",
+                "price": 24370
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9,5 KWP TCL 500 + DEYE 3F",
+                "price": 25230
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10 KWP TCL 500 + DEYE 3F",
+                "price": 26090
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10,5 KWP TCL 500 + DEYE 3F",
+                "price": 26950
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11 KWP TCL 500 + DEYE 3F",
+                "price": 27810
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11,5 KWP TCL 500 + DEYE 3F",
+                "price": 28670
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12 KWP TCL 500 + DEYE 3F",
+                "price": 29390
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12,5 KWP TCL 500 + DEYE 3F",
+                "price": 30110
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13 KWP TCL 500 + DEYE 3F",
+                "price": 30830
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13,5 KWP TCL 500 + DEYE 3F",
+                "price": 31550
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14 KWP TCL 500 + DEYE 3F",
+                "price": 32270
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14,5 KWP TCL 500 + DEYE 3F",
+                "price": 32990
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 15 KWP TCL 500 + DEYE 3F",
+                "price": 33710
+            }
+        ],
+        "EKIERKI": [
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 3 KWP TCL 500 + DEYE 1F",
+                "price": 13847.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 3,5 KWP TCL 500 + DEYE 1F",
+                "price": 14767.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4 KWP TCL 500 + DEYE 1F",
+                "price": 15687.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP TCL 500 + DEYE 3F",
+                "price": 16607.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5 KWP TCL 500 + DEYE 3F",
+                "price": 17527.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5,5 KWP TCL 500 + DEYE 3F",
+                "price": 18447.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6 KWP TCL 500 + DEYE 3F",
+                "price": 19367.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6,5 KWP TCL 500 + DEYE 3F",
+                "price": 20287.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7 KWP TCL 500 + DEYE 3F",
+                "price": 21147.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7,5 KWP TCL 500 + DEYE 3F",
+                "price": 22007.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8 KWP TCL 500 + DEYE 3F",
+                "price": 22867.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8,5 KWP TCL 500 + DEYE 3F",
+                "price": 23727.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9 KWP TCL 500 + DEYE 3F",
+                "price": 24587.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9,5 KWP TCL 500 + DEYE 3F",
+                "price": 25447.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10 KWP TCL 500 + DEYE 3F",
+                "price": 26307.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10,5 KWP TCL 500 + DEYE 3F",
+                "price": 27167.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11 KWP TCL 500 + DEYE 3F",
+                "price": 28027.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11,5 KWP TCL 500 + DEYE 3F",
+                "price": 28887.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12 KWP TCL 500 + DEYE 3F",
+                "price": 29647.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12,5 KWP TCL 500 + DEYE 3F",
+                "price": 30407.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13 KWP TCL 500 + DEYE 3F",
+                "price": 31167.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP TCL 500 + DEYE 3F",
+                "price": 31927.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14 KWP TCL 500 + DEYE 3F",
+                "price": 32687.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14,5 KWP TCL 500 + DEYE 3F",
+                "price": 33447.5
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 15 KWP TCL 500 + DEYE 3F",
+                "price": 34207.5
+            }
+        ],
+        "GRUNT": [
+            {
+                "name": "GRUNT ZESTAW 3 KWP TCL 500 + DEYE 1F",
+                "price": 14194
+            },
+            {
+                "name": "GRUNT ZESTAW 3,5 KWP TCL 500 + DEYE 1F",
+                "price": 15114
+            },
+            {
+                "name": "GRUNT ZESTAW 4 KWP TCL 500 + DEYE 1F",
+                "price": 16034
+            },
+            {
+                "name": "GRUNT ZESTAW 4,5 KWP TCL 500 + DEYE 3F",
+                "price": 16954
+            },
+            {
+                "name": "GRUNT ZESTAW 5 KWP TCL 500 + DEYE 3F",
+                "price": 17874
+            },
+            {
+                "name": "GRUNT ZESTAW 5,5 KWP TCL 500 + DEYE 3F",
+                "price": 18794
+            },
+            {
+                "name": "GRUNT ZESTAW 6 KWP TCL 500 + DEYE 3F",
+                "price": 19714
+            },
+            {
+                "name": "GRUNT ZESTAW 6,5 KWP TCL 500 + DEYE 3F",
+                "price": 20634
+            },
+            {
+                "name": "GRUNT ZESTAW 7 KWP TCL 500 + DEYE 3F",
+                "price": 21494
+            },
+            {
+                "name": "GRUNT ZESTAW 7,5 KWP TCL 500 + DEYE 3F",
+                "price": 22354
+            },
+            {
+                "name": "GRUNT ZESTAW 8 KWP TCL 500 + DEYE 3F",
+                "price": 23214
+            },
+            {
+                "name": "GRUNT ZESTAW 8,5 KWP TCL 500 + DEYE 3F",
+                "price": 24074
+            },
+            {
+                "name": "GRUNT ZESTAW 9 KWP TCL 500 + DEYE 3F",
+                "price": 24934
+            },
+            {
+                "name": "GRUNT ZESTAW 9,5 KWP TCL 500 + DEYE 3F",
+                "price": 25794
+            },
+            {
+                "name": "GRUNT ZESTAW 10 KWP TCL 500 + DEYE 3F",
+                "price": 26654
+            },
+            {
+                "name": "GRUNT ZESTAW 10,5 KWP TCL 500 + DEYE 3F",
+                "price": 27514
+            },
+            {
+                "name": "GRUNT ZESTAW 11 KWP TCL 500 + DEYE 3F",
+                "price": 28374
+            },
+            {
+                "name": "GRUNT ZESTAW 11,5 KWP TCL 500 + DEYE 3F",
+                "price": 29234
+            },
+            {
+                "name": "GRUNT ZESTAW 12 KWP TCL 500 + DEYE 3F",
+                "price": 30024
+            },
+            {
+                "name": "GRUNT ZESTAW 12,5 KWP TCL 500 + DEYE 3F",
+                "price": 30814
+            },
+            {
+                "name": "GRUNT ZESTAW 13 KWP TCL 500 + DEYE 3F",
+                "price": 31604
+            },
+            {
+                "name": "GRUNT ZESTAW 13,5 KWP TCL 500 + DEYE 3F",
+                "price": 32394
+            },
+            {
+                "name": "GRUNT ZESTAW 14 KWP TCL 500 + DEYE 3F",
+                "price": 33184
+            },
+            {
+                "name": "GRUNT ZESTAW 14,5 KWP TCL 500 + DEYE 3F",
+                "price": 33974
+            },
+            {
+                "name": "GRUNT ZESTAW 15 KWP TCL 500 + DEYE 3F",
+                "price": 34764
+            }
+        ]
+    },
+    "zestawy_niskonapieciowe": {
+        "TRAPEZ": [
+            {
+                "name": "TRAPEZ ZESTAW 3,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 24540
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 25440
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 26340
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 27240
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 28140
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 29040
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 29840
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 30640
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 31440
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32240
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 33040
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 33840
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 34640
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 35440
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 36140
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 36840
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 37540
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 38240
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 38890
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 39540
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 40190
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 40840
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 41490
+            },
+            {
+                "name": "TRAPEZ ZESTAW 15 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 42140
+            }
+        ],
+        "BLACHODACHÓWKA": [
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 3,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 25538.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 26488.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 26938.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 28388.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 29308.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 30228.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 31148.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32068.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32388.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 33708.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 34528.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 35348.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 36168.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 36488.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 37308.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 38128.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 38948.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 39768.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 40488.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 41208.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 41928.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 42648.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 43368.4
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 15 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 44088.4
+            }
+        ],
+        "DACHÓWKA": [
+            {
+                "name": "DACHÓWKA ZESTAW 3,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 25752
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 26672
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 27592
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 28512
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 29432
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 30352
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 31272
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32132
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32992
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 33852
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 34712
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 35572
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 35932
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 36792
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 37652
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 38512
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 39372
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 40232
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 40952
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 41672
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 42392
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 43112
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 43832
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 15 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 44552
+            }
+        ],
+        "EKIERKI": [
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 3,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 25930
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 26850
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 27770
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 28690
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 29610
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 30530
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 31450
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32370
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 33230
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 34090
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 34450
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 35310
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 36170
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 37030
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 37890
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 38750
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 39610
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 40470
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 41230
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 41990
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 42750
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 43510
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 44270
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 15 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 45030
+            }
+        ],
+        "GRUNT": [
+            {
+                "name": "GRUNT ZESTAW 3,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 26021.6
+            },
+            {
+                "name": "GRUNT ZESTAW 4 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 26941.6
+            },
+            {
+                "name": "GRUNT ZESTAW 4,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 28361.6
+            },
+            {
+                "name": "GRUNT ZESTAW 5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 29281.6
+            },
+            {
+                "name": "GRUNT ZESTAW 5,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 30201.6
+            },
+            {
+                "name": "GRUNT ZESTAW 6 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 31121.6
+            },
+            {
+                "name": "GRUNT ZESTAW 6,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32041.6
+            },
+            {
+                "name": "GRUNT ZESTAW 7 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 32961.6
+            },
+            {
+                "name": "GRUNT ZESTAW 7,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 33881.6
+            },
+            {
+                "name": "GRUNT ZESTAW 8 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 34801.6
+            },
+            {
+                "name": "GRUNT ZESTAW 8,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 35321.6
+            },
+            {
+                "name": "GRUNT ZESTAW 9 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 36241.6
+            },
+            {
+                "name": "GRUNT ZESTAW 9,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 37161.6
+            },
+            {
+                "name": "GRUNT ZESTAW 10 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 38081.6
+            },
+            {
+                "name": "GRUNT ZESTAW 10,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 39001.6
+            },
+            {
+                "name": "GRUNT ZESTAW 11 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 39921.6
+            },
+            {
+                "name": "GRUNT ZESTAW 11,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 40841.6
+            },
+            {
+                "name": "GRUNT ZESTAW 12 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 41761.6
+            },
+            {
+                "name": "GRUNT ZESTAW 12,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 42551.6
+            },
+            {
+                "name": "GRUNT ZESTAW 13 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 43471.6
+            },
+            {
+                "name": "GRUNT ZESTAW 13,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 44391.6
+            },
+            {
+                "name": "GRUNT ZESTAW 14 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 45311.6
+            },
+            {
+                "name": "GRUNT ZESTAW 14,5 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 46231.6
+            },
+            {
+                "name": "GRUNT ZESTAW 15 KWP TCL 500 + DEYE 3F + magazyn energii niskonapięciowy LV Felicity LUX-Y",
+                "price": 47151.6
+            }
+        ]
+    },
+    "zestawy_wysokonapieciowe": {
+        "TRAPEZ": [
+            {
+                "name": "TRAPEZ ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 27140
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 28040
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 28940
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 29840
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 30740
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 31640
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 32440
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 33240
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 33840
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 34440
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 35240
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36040
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36740
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 37540
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 38240
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 38940
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 39640
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 40340
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 40990
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13 KWP TCL 500 +GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 41640
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 42290
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 42940
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 43590
+            },
+            {
+                "name": "TRAPEZ ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 44240
+            }
+        ],
+        "BLACHODACHÓWKA": [
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 27394
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 28344
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 29294
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 30044
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 30964
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 31884
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 32804
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 33724
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 34544
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 35364
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36084
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36704
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 37524
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 38344
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 39164
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 39984
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 40804
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 41624
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 42344
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 43064
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 43784
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 44504
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 45224
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 45944
+            }
+        ],
+        "DACHÓWKA": [
+            {
+                "name": "DACHÓWKA ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 27510
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 28430
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 29350
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 30270
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 31190
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 32110
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 33030
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 33890
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 34750
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 35610
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36270
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 37130
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 37690
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 38550
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 39410
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 40270
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 41130
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 41990
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 42710
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 43430
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 44150
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 44870
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 45590
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 46310
+            }
+        ],
+        "EKIERKI": [
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 27640
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 28560
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 29480
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 30400
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 31320
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 32240
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 33160
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 34080
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 34940
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 35800
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36460
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 37120
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 37880
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 38740
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 39600
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 40460
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 41320
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 42180
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 42940
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 43700
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 44460
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 45220
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 45980
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 46740
+            }
+        ],
+        "GRUNT": [
+            {
+                "name": "GRUNT ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 27836
+            },
+            {
+                "name": "GRUNT ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 28756
+            },
+            {
+                "name": "GRUNT ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 29676
+            },
+            {
+                "name": "GRUNT ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 30596
+            },
+            {
+                "name": "GRUNT ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 31516
+            },
+            {
+                "name": "GRUNT ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 32936
+            },
+            {
+                "name": "GRUNT ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 33856
+            },
+            {
+                "name": "GRUNT ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 34776
+            },
+            {
+                "name": "GRUNT ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 35436
+            },
+            {
+                "name": "GRUNT ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36496
+            },
+            {
+                "name": "GRUNT ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 36856
+            },
+            {
+                "name": "GRUNT ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 37516
+            },
+            {
+                "name": "GRUNT ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 38176
+            },
+            {
+                "name": "GRUNT ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 39036
+            },
+            {
+                "name": "GRUNT ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 39896
+            },
+            {
+                "name": "GRUNT ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 40756
+            },
+            {
+                "name": "GRUNT ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 41616
+            },
+            {
+                "name": "GRUNT ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 42476
+            },
+            {
+                "name": "GRUNT ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 43266
+            },
+            {
+                "name": "GRUNT ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 44056
+            },
+            {
+                "name": "GRUNT ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 44846
+            },
+            {
+                "name": "GRUNT ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 45636
+            },
+            {
+                "name": "GRUNT ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 46426
+            },
+            {
+                "name": "GRUNT ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
+                "price": 47216
+            }
+        ]
+    },
+    "zestawy_premium": {
+        "TRAPEZ": [
+            {
+                "name": "TRAPEZ ZESTAW 3,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 27300
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 28200
+            },
+            {
+                "name": "TRAPEZ ZESTAW 4,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 29020
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 29840
+            },
+            {
+                "name": "TRAPEZ ZESTAW 5,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 30660
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 31480
+            },
+            {
+                "name": "TRAPEZ ZESTAW 6,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 32300
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33000
+            },
+            {
+                "name": "TRAPEZ ZESTAW 7,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33700
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 34380
+            },
+            {
+                "name": "TRAPEZ ZESTAW 8,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 35060
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 35740
+            },
+            {
+                "name": "TRAPEZ ZESTAW 9,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 36420
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37100
+            },
+            {
+                "name": "TRAPEZ ZESTAW 10,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37750
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 38400
+            },
+            {
+                "name": "TRAPEZ ZESTAW 11,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 39050
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 39700
+            },
+            {
+                "name": "TRAPEZ ZESTAW 12,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 40350
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41000
+            },
+            {
+                "name": "TRAPEZ ZESTAW 13,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41650
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 42300
+            },
+            {
+                "name": "TRAPEZ ZESTAW 14,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 42950
+            },
+            {
+                "name": "TRAPEZ ZESTAW 15 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 43600
+            }
+        ],
+        "BLACHODACHÓWKA": [
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 3,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 27450
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 28350
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 29200
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 30050
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 5,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 30900
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 31750
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 6,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 32600
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33450
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 7,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 34230
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 35010
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 8,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 35790
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 36570
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 9,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37350
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 38130
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 10,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 38910
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 39690
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 11,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 40470
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41270
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 12,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41990
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 42710
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 43430
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 44150
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 14,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 44870
+            },
+            {
+                "name": "BLACHODACHÓWKA ZESTAW 15 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 45590
+            }
+        ],
+        "DACHÓWKA": [
+            {
+                "name": "DACHÓWKA ZESTAW 3,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 27700
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 28600
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 4,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 29500
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 30400
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 5,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 31300
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 32200
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 6,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33100
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33920
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 7,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 34740
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 35560
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 8,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 36380
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37200
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 9,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 38020
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 38840
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 10,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 39620
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 40400
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 11,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41180
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41960
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 12,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 42680
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 43400
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 13,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 44120
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 44840
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 14,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 45560
+            },
+            {
+                "name": "DACHÓWKA ZESTAW 15 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 46280
+            }
+        ],
+        "EKIERKI": [
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 3,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 27600
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 28500
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 29400
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 30300
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 5,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 31200
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 32100
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 6,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33000
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33900
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 7,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 34700
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 35500
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 8,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 36300
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37100
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 9,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37900
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 38700
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 10,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 39500
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 40300
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 11,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41100
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41900
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 12,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 42650
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 43400
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 44150
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 44900
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 14,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 45650
+            },
+            {
+                "name": "EKIERKI INWAZYJNE ZESTAW 15 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 46400
+            }
+        ],
+        "GRUNT": [
+            {
+                "name": "GRUNT ZESTAW 3,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 28000
+            },
+            {
+                "name": "GRUNT ZESTAW 4 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 28970
+            },
+            {
+                "name": "GRUNT ZESTAW 4,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 29940
+            },
+            {
+                "name": "GRUNT ZESTAW 5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 30910
+            },
+            {
+                "name": "GRUNT ZESTAW 5,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 31880
+            },
+            {
+                "name": "GRUNT ZESTAW 6 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 32850
+            },
+            {
+                "name": "GRUNT ZESTAW 6,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 33820
+            },
+            {
+                "name": "GRUNT ZESTAW 7 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 34790
+            },
+            {
+                "name": "GRUNT ZESTAW 7,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 35580
+            },
+            {
+                "name": "GRUNT ZESTAW 8 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 36370
+            },
+            {
+                "name": "GRUNT ZESTAW 8,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37160
+            },
+            {
+                "name": "GRUNT ZESTAW 9 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 37950
+            },
+            {
+                "name": "GRUNT ZESTAW 9,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 38740
+            },
+            {
+                "name": "GRUNT ZESTAW 10 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 39530
+            },
+            {
+                "name": "GRUNT ZESTAW 10,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 40320
+            },
+            {
+                "name": "GRUNT ZESTAW 11 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41110
+            },
+            {
+                "name": "GRUNT ZESTAW 11,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 41900
+            },
+            {
+                "name": "GRUNT ZESTAW 12 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 42690
+            },
+            {
+                "name": "GRUNT ZESTAW 12,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 43480
+            },
+            {
+                "name": "GRUNT ZESTAW 13 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 44270
+            },
+            {
+                "name": "GRUNT ZESTAW 13,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 45060
+            },
+            {
+                "name": "GRUNT ZESTAW 14 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 45850
+            },
+            {
+                "name": "GRUNT ZESTAW 14,5 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 46640
+            },
+            {
+                "name": "GRUNT ZESTAW 15 KWP TCL 500 + SIGEN HYBRID TP2 + magazyn energii SigenStor",
+                "price": 47430
+            }
+        ]
+    }
+};
 
     function aktualizujPodsumowanieWizualne() {
         numerZapisanejOferty = null;
@@ -371,8 +2283,7 @@
         const ladowarkaEl = document.getElementById('ladowarka-samochodowa');
 
         let oplataDokladka = 0;
-        const czyWybranoProdukt = wybranyZestaw.price > 0 || getPrice(document.getElementById('magazyn-niskonapieciowy')) > 0 || getPrice(document.getElementById('magazyn-wysokonapieciowy')) > 0 || getPrice(magSigen1) > 0 || getPrice(magSigen2) > 0 || getPrice(ladowarkaEl) > 0;
-        if (document.getElementById('typ-instalacji').value === 'dokladka' && czyWybranoProdukt) { oplataDokladka = 400; }
+        if (document.getElementById('typ-instalacji').value === 'dokladka') { oplataDokladka = 400; }
 
         daneOferty = {
             zestawPV: wybranyZestaw,
@@ -424,7 +2335,7 @@
         };
         if (daneOferty.oplataDokladka > 0) dodajDoListy('Typ zlecenia', 'Dokładka instalacji (+400 PLN)');
         dodajDoListy('Zestaw główny', daneOferty.zestawPV.text);
-        dodajDoListy('Magazyn FELICITY', daneOferty.magazynNisko.text);
+        dodajDoListy('Magazyn DEYE', daneOferty.magazynNisko.text);
         dodajDoListy('Magazyn DYNESS', daneOferty.magazynWysoko.text);
         dodajDoListy('Magazyn SIGEN 1', daneOferty.magazynSigen1.text);
         dodajDoListy('Magazyn SIGEN 2', daneOferty.magazynSigen2.text);
@@ -524,7 +2435,7 @@
         doc.text(removePolishChars(`Handlowiec: ${daneOferty.handlowiec.imie}`), 105, y+7); doc.text(`tel: ${daneOferty.handlowiec.telefon}`, 105, y+14);
         y += 45; doc.setFontSize(12); doc.setTextColor(...zielony); doc.setFont('helvetica', 'bold'); doc.text("ZAKRES PRAC I MATERIALOW", 15, y);
         let list = []; const add = (l, v) => { if(v && v !== '0' && v !== 'Brak' && v !== '-- Wybierz --' && v !== 'NIE DOTYCZY' && v !== 'NIE') list.push([removePolishChars("- " + l + ": " + v)]); };
-        if(daneOferty.oplataDokladka > 0) add('Typ', 'Dokladka (+400 zl netto)'); add('Zestaw', daneOferty.zestawPV.text); add('Magazyn FELICITY', daneOferty.magazynNisko.text); add('Magazyn DYNESS', daneOferty.magazynWysoko.text); add('Sigen 1', daneOferty.magazynSigen1.text); add('Sigen 2', daneOferty.magazynSigen2.text); add('Ladowarka', daneOferty.ladowarka.text); add('Bufor ciepla', daneOferty.dodatkiMagazyn.text); add('Moduly', daneOferty.dodatkiModuly.text); add('Turbina', daneOferty.turbinaWiatrowa.text); if(daneOferty.przekop.value !== 'brak') add('Prace ziemne', `${daneOferty.przekop.text} (${daneOferty.przekop.dlugosc}m)`); if(daneOferty.samKabel.cena > 0) add('Kabel', `${daneOferty.samKabel.text} (${daneOferty.samKabel.dlugosc}m)`); add('Klimatyzacja', daneOferty.klimatyzacja.text); add('Wymiana falownika', daneOferty.wymianaFalownikMagazyn.text); add('Modernizacja', daneOferty.modernizacjaRozdzielni.text); if(daneOferty.inneDodatki.cena > 0) add('Inne', `${daneOferty.inneDodatki.nazwa}: ${daneOferty.inneDodatki.cena} zl`);
+        if(daneOferty.oplataDokladka > 0) add('Typ', 'Dokladka (+400 zl netto)'); add('Zestaw', daneOferty.zestawPV.text); add('Magazyn DEYE', daneOferty.magazynNisko.text); add('Magazyn DYNESS', daneOferty.magazynWysoko.text); add('Sigen 1', daneOferty.magazynSigen1.text); add('Sigen 2', daneOferty.magazynSigen2.text); add('Ladowarka', daneOferty.ladowarka.text); add('Bufor ciepla', daneOferty.dodatkiMagazyn.text); add('Moduly', daneOferty.dodatkiModuly.text); add('Turbina', daneOferty.turbinaWiatrowa.text); if(daneOferty.przekop.value !== 'brak') add('Prace ziemne', `${daneOferty.przekop.text} (${daneOferty.przekop.dlugosc}m)`); if(daneOferty.samKabel.cena > 0) add('Kabel', `${daneOferty.samKabel.text} (${daneOferty.samKabel.dlugosc}m)`); add('Klimatyzacja', daneOferty.klimatyzacja.text); add('Wymiana falownika', daneOferty.wymianaFalownikMagazyn.text); add('Modernizacja', daneOferty.modernizacjaRozdzielni.text); if(daneOferty.inneDodatki.cena > 0) add('Inne', `${daneOferty.inneDodatki.nazwa}: ${daneOferty.inneDodatki.cena} zl`);
         doc.autoTable({ startY: y+10, body: list, theme: 'plain', styles: { fontSize: 10 } });
         let summary = []; if(typ === 'biuro') summary.push(["Marza:", `${daneOferty.obliczenia.marzaDlaPH.toFixed(2)} zl`]);
         summary.push(["Netto:", `${daneOferty.obliczenia.sumaNettoFinal.toFixed(2)} zl`], ["VAT:", `${daneOferty.obliczenia.kwotaVat.toFixed(2)} zl`], ["BRUTTO:", `${daneOferty.obliczenia.cenaKoncowa.toFixed(2)} zl`]);
