@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cdnjs.cloudflare.com;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Green Now Katowice 4.0 - TCL 500</title>
+    <title>Kalkulator Green Now Katowice 4.0 - TCL 500 + ECO BSS</title>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
@@ -69,7 +69,7 @@
                 <label>ZESTAWY TCL 500W + Inwerter hybrydowy DEYE SUN + MAGAZYN ENERGII NISKONAPIĘCIOWY - LV Felicity LUX-Y</label>
                 <select id="zestaw-niskonapieciowy" class="lista-produktow" disabled><option value="0" data-price="0">--</option></select>
                 
-                <label>ZESTAWY TCL 500W + Inwerter Sieciowy GOODWE + MAGAZYN ENERGII WYSOKONAPIĘCIOWY - Dyness Tower</label>
+                <label>ZESTAWY TCL 500W + Inwerter Hybrydowy HECMANN + MAGAZYN ENERGII - ECO BSS L10</label>
                 <select id="zestaw-wysokonapieciowy" class="lista-produktow" disabled><option value="0" data-price="0">--</option></select>
 
                 <label>ZESTAW PREMIUM TCL 500W (SigenStor)</label>
@@ -90,11 +90,11 @@
                     <option value="deye23" data-price="8500">Zwiększenie magazynu DEYE do 23,5kWh</option>
                 </select>
 
-                <label>Zwiększenie magazynu DYNESS:</label>
+                <label>Zwiększenie magazynu ECO BSS:</label>
                 <select id="magazyn-wysokonapieciowy">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="dyness14" data-price="3100">Zwiększenie magazynu DYNESS do 14,21kWh</option>
-                    <option value="dyness17" data-price="6200">Zwiększenie magazynu DYNESS do 17,76kWh</option>
+                    <option value="eco_bss_15" data-price="2000">Zwiększenie magazynu ECO BSS do 15,36kWh</option>
+                    <option value="eco_bss_20" data-price="6500">Zwiększenie magazynu ECO BSS do 20,68kWh</option>
                 </select>
 
                 <label>Zwiększenie magazynu SIGENSTOR 1:</label>
@@ -159,7 +159,7 @@
                     <option value="do10" data-price-per-meter="0" data-price="0">Przekop z kablem do 10 m (w cenie)</option>
                     <option value="powyzej10" data-price-per-meter="35">Przekop z kablem powyżej 10m (35 zł/m)</option>
                 </select>
-                <div id="dlugosc-przekopu-kontener" class="ukryty"><label>Długość przekopu (m):</label><input type="number" id="dlugosc-przekopu" min="0" value="0"></div>
+                <div id="dlugosc-przekopu-kontener" class="ukryty"><label>Długość przekopu (m) - liczone x 35 zł netto:</label><input type="number" id="dlugosc-przekopu" min="0" value="0" placeholder="Wpisz ilość metrów"></div>
                 
                 <label>Przekop po stronie:</label>
                 <select id="przekop-strona">
@@ -173,7 +173,7 @@
                     <option value="brak" data-price-per-meter="0">-- Brak --</option>
                     <option value="kabel_ziemny" data-price-per-meter="25">Kabel ziemny (25 zł/m)</option>
                 </select>
-                <div id="dlugosc-kabla-kontener" class="ukryty"><label>Długość kabla (m):</label><input type="number" id="dlugosc-kabla" min="0" value="0"></div>
+                <div id="dlugosc-kabla-kontener" class="ukryty"><label>Długość kabla (m) - liczone x 25 zł netto:</label><input type="number" id="dlugosc-kabla" min="0" value="0" placeholder="Wpisz ilość metrów"></div>
 
                 <label>Klimatyzacja:</label>
                 <select id="klimatyzacja">
@@ -187,7 +187,7 @@
                 <label>Wymiana falownik + magazyn:</label>
                 <select id="wymiana-falownik-magazyn">
                     <option value="0" data-price="0">-- Wybierz --</option>
-                    <option value="wym_goodwe10" data-price="23500">Falownik LV (GoodWe 10) + magazyn 10kWh</option>
+                    <option value="wym_hecman_eco_bss_l10" data-price="24200">Falownik LV (HECMAN) + magazyn ECO BSS L10 (10,34kWh)</option>
                     <option value="wym_deye5" data-price="20400">Falownik LV (Deye 5) + magazyn 5kWh</option>
                     <option value="wym_deye10" data-price="23200">Falownik LV (Deye 10) + magazyn 10kWh</option>
                     <option value="wym_sig6" data-price="22200">Falownik SIGEN HYBRID TP2 + SigenStor 6.0 (PSTRYK)</option>
@@ -1277,492 +1277,492 @@
     "zestawy_wysokonapieciowe": {
         "TRAPEZ": [
             {
-                "name": "TRAPEZ ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 27140
+                "name": "TRAPEZ ZESTAW 3,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 28440
             },
             {
-                "name": "TRAPEZ ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 28040
+                "name": "TRAPEZ ZESTAW 4 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 29340
             },
             {
-                "name": "TRAPEZ ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 28940
+                "name": "TRAPEZ ZESTAW 4,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 30240
             },
             {
-                "name": "TRAPEZ ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 29840
+                "name": "TRAPEZ ZESTAW 5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 31140
             },
             {
-                "name": "TRAPEZ ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 30740
+                "name": "TRAPEZ ZESTAW 5,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 32040
             },
             {
-                "name": "TRAPEZ ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 31640
+                "name": "TRAPEZ ZESTAW 6 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 32940
             },
             {
-                "name": "TRAPEZ ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 32440
+                "name": "TRAPEZ ZESTAW 6,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 33740
             },
             {
-                "name": "TRAPEZ ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 33240
+                "name": "TRAPEZ ZESTAW 7 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 34540
             },
             {
-                "name": "TRAPEZ ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 33840
+                "name": "TRAPEZ ZESTAW 7,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 35340
             },
             {
-                "name": "TRAPEZ ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 34440
+                "name": "TRAPEZ ZESTAW 8 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 36140
             },
             {
-                "name": "TRAPEZ ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 35240
+                "name": "TRAPEZ ZESTAW 8,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 36940
             },
             {
-                "name": "TRAPEZ ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36040
+                "name": "TRAPEZ ZESTAW 9 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 37740
             },
             {
-                "name": "TRAPEZ ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36740
+                "name": "TRAPEZ ZESTAW 9,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 38540
             },
             {
-                "name": "TRAPEZ ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 37540
+                "name": "TRAPEZ ZESTAW 10 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 39340
             },
             {
-                "name": "TRAPEZ ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 38240
+                "name": "TRAPEZ ZESTAW 10,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40040
             },
             {
-                "name": "TRAPEZ ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 38940
+                "name": "TRAPEZ ZESTAW 11 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40740
             },
             {
-                "name": "TRAPEZ ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 39640
+                "name": "TRAPEZ ZESTAW 11,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 41440
             },
             {
-                "name": "TRAPEZ ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 40340
+                "name": "TRAPEZ ZESTAW 12 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 42140
             },
             {
-                "name": "TRAPEZ ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 40990
+                "name": "TRAPEZ ZESTAW 12,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 42790
             },
             {
-                "name": "TRAPEZ ZESTAW 13 KWP TCL 500 +GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 41640
+                "name": "TRAPEZ ZESTAW 13 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 43440
             },
             {
-                "name": "TRAPEZ ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 42290
+                "name": "TRAPEZ ZESTAW 13,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 44090
             },
             {
-                "name": "TRAPEZ ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 42940
+                "name": "TRAPEZ ZESTAW 14 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 44740
             },
             {
-                "name": "TRAPEZ ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 43590
+                "name": "TRAPEZ ZESTAW 14,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 45390
             },
             {
-                "name": "TRAPEZ ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 44240
+                "name": "TRAPEZ ZESTAW 15 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 46040
             }
         ],
         "BLACHODACHÓWKA": [
             {
-                "name": "BLACHODACHÓWKA ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 27394
+                "name": "BLACHODACHÓWKA ZESTAW 3,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 29438.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 28344
+                "name": "BLACHODACHÓWKA ZESTAW 4 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 30388.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 29294
+                "name": "BLACHODACHÓWKA ZESTAW 4,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 30838.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 30044
+                "name": "BLACHODACHÓWKA ZESTAW 5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 32288.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 30964
+                "name": "BLACHODACHÓWKA ZESTAW 5,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 33208.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 31884
+                "name": "BLACHODACHÓWKA ZESTAW 6 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 34128.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 32804
+                "name": "BLACHODACHÓWKA ZESTAW 6,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 35048.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 33724
+                "name": "BLACHODACHÓWKA ZESTAW 7 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 35968.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 34544
+                "name": "BLACHODACHÓWKA ZESTAW 7,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 36288.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 35364
+                "name": "BLACHODACHÓWKA ZESTAW 8 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 37608.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36084
+                "name": "BLACHODACHÓWKA ZESTAW 8,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 38428.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36704
+                "name": "BLACHODACHÓWKA ZESTAW 9 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 39248.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 37524
+                "name": "BLACHODACHÓWKA ZESTAW 9,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40068.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 38344
+                "name": "BLACHODACHÓWKA ZESTAW 10 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40388.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 39164
+                "name": "BLACHODACHÓWKA ZESTAW 10,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 41208.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 39984
+                "name": "BLACHODACHÓWKAZESTAW 11 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 42028.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 40804
+                "name": "BLACHODACHÓWKA ZESTAW 11,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 42848.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 41624
+                "name": "BLACHODACHÓWKA ZESTAW 12 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 43668.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 42344
+                "name": "BLACHODACHÓWKA ZESTAW 12,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 44388.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 43064
+                "name": "BLACHODACHÓWKA ZESTAW 13 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 45108.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 43784
+                "name": "BLACHODACHÓWKA ZESTAW 13,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 45828.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 44504
+                "name": "BLACHODACHÓWKA ZESTAW 14 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 46548.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 45224
+                "name": "BLACHODACHÓWKA ZESTAW 14,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 47268.4
             },
             {
-                "name": "BLACHODACHÓWKA ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 45944
+                "name": "BLACHODACHÓWKA ZESTAW 15 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 47988.4
             }
         ],
         "DACHÓWKA": [
             {
-                "name": "DACHÓWKA ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 27510
+                "name": "DACHÓWKA ZESTAW 3,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 29652
             },
             {
-                "name": "DACHÓWKA ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 28430
+                "name": "DACHÓWKA ZESTAW 4 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 30572
             },
             {
-                "name": "DACHÓWKA ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 29350
+                "name": "DACHÓWKA ZESTAW 4,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 31492
             },
             {
-                "name": "DACHÓWKA ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 30270
+                "name": "DACHÓWKA ZESTAW 5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 32412
             },
             {
-                "name": "DACHÓWKA ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 31190
+                "name": "DACHÓWKA ZESTAW 5,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 33332
             },
             {
-                "name": "DACHÓWKA ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 32110
+                "name": "DACHÓWKA ZESTAW 6 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 34252
             },
             {
-                "name": "DACHÓWKA ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 33030
+                "name": "DACHÓWKA ZESTAW 6,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 35172
             },
             {
-                "name": "DACHÓWKA ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 33890
+                "name": "DACHÓWKA ZESTAW 7 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 36032
             },
             {
-                "name": "DACHÓWKA ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 34750
+                "name": "DACHÓWKA ZESTAW 7,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 36892
             },
             {
-                "name": "DACHÓWKA ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 35610
+                "name": "DACHÓWKA ZESTAW 8 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 37752
             },
             {
-                "name": "DACHÓWKA ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36270
+                "name": "DACHÓWKA ZESTAW 8,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 38612
             },
             {
-                "name": "DACHÓWKA ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 37130
+                "name": "DACHÓWKA ZESTAW 9 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 39472
             },
             {
-                "name": "DACHÓWKA ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 37690
+                "name": "DACHÓWKA ZESTAW 9,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 39832
             },
             {
-                "name": "DACHÓWKA ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 38550
+                "name": "DACHÓWKA ZESTAW 10 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40692
             },
             {
-                "name": "DACHÓWKA ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 39410
+                "name": "DACHÓWKA ZESTAW 10,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 41552
             },
             {
-                "name": "DACHÓWKA ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 40270
+                "name": "DACHÓWKA ZESTAW 11 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 42412
             },
             {
-                "name": "DACHÓWKA ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 41130
+                "name": "DACHÓWKA ZESTAW 11,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 43272
             },
             {
-                "name": "DACHÓWKA ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 41990
+                "name": "DACHÓWKA ZESTAW 12 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 44132
             },
             {
-                "name": "DACHÓWKA ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 42710
+                "name": "DACHÓWKA ZESTAW 12,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 44852
             },
             {
-                "name": "DACHÓWKA ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 43430
+                "name": "DACHÓWKA ZESTAW 13 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 45572
             },
             {
-                "name": "DACHÓWKA ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 44150
+                "name": "DACHÓWKA ZESTAW 13,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 46292
             },
             {
-                "name": "DACHÓWKA ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 44870
+                "name": "DACHÓWKA ZESTAW 14 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 47012
             },
             {
-                "name": "DACHÓWKA ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 45590
+                "name": "DACHÓWKA ZESTAW 14,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 47732
             },
             {
-                "name": "DACHÓWKA ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 46310
+                "name": "DACHÓWKA ZESTAW 15 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 48452
             }
         ],
         "EKIERKI": [
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 27640
+                "name": "EKIERKI INWAZYJNE ZESTAW 3,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 29830
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 28560
+                "name": "EKIERKI INWAZYJNE ZESTAW 4 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 30750
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 29480
+                "name": "EKIERKI INWAZYJNE ZESTAW 4,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 31670
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 30400
+                "name": "EKIERKI INWAZYJNE ZESTAW 5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 32590
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 31320
+                "name": "EKIERKI INWAZYJNE ZESTAW 5,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 33510
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 32240
+                "name": "EKIERKI INWAZYJNE ZESTAW 6 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 34430
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 33160
+                "name": "EKIERKI INWAZYJNE ZESTAW 6,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 35350
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 34080
+                "name": "EKIERKI INWAZYJNE ZESTAW 7 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 36270
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 34940
+                "name": "EKIERKI INWAZYJNE ZESTAW 7,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 37130
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 35800
+                "name": "EKIERKI INWAZYJNE ZESTAW 8 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 37990
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36460
+                "name": "EKIERKI INWAZYJNE ZESTAW 8,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 38350
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 37120
+                "name": "EKIERKI INWAZYJNE ZESTAW 9 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 39210
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 37880
+                "name": "EKIERKI INWAZYJNE ZESTAW 9,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40070
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 38740
+                "name": "EKIERKI INWAZYJNE ZESTAW 10 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40930
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 39600
+                "name": "EKIERKI INWAZYJNE ZESTAW 10,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 41790
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 40460
+                "name": "EKIERKI INWAZYJNE ZESTAW 11 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 42650
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 41320
+                "name": "EKIERKI INWAZYJNE ZESTAW 11,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 43510
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 42180
+                "name": "EKIERKI INWAZYJNE ZESTAW 12 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 44370
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 42940
+                "name": "EKIERKI INWAZYJNE ZESTAW 12,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 45130
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 43700
+                "name": "EKIERKI INWAZYJNE ZESTAW 13 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 45890
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 44460
+                "name": "EKIERKI INWAZYJNE ZESTAW 13,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 46650
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 45220
+                "name": "EKIERKI INWAZYJNE ZESTAW 14 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 47410
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 45980
+                "name": "EKIERKI INWAZYJNE ZESTAW 14,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 48170
             },
             {
-                "name": "EKIERKI INWAZYJNE ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 46740
+                "name": "EKIERKI INWAZYJNE ZESTAW 15 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 48930
             }
         ],
         "GRUNT": [
             {
-                "name": "GRUNT ZESTAW 3,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 27836
+                "name": "GRUNT ZESTAW 3,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 29921.6
             },
             {
-                "name": "GRUNT ZESTAW 4 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 28756
+                "name": "GRUNT ZESTAW 4 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 30841.6
             },
             {
-                "name": "GRUNT ZESTAW 4,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 29676
+                "name": "GRUNT ZESTAW 4,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 32261.6
             },
             {
-                "name": "GRUNT ZESTAW 5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 30596
+                "name": "GRUNT ZESTAW 5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 33181.6
             },
             {
-                "name": "GRUNT ZESTAW 5,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 31516
+                "name": "GRUNT ZESTAW 5,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 34101.6
             },
             {
-                "name": "GRUNT ZESTAW 6 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 32936
+                "name": "GRUNT ZESTAW 6 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 35021.6
             },
             {
-                "name": "GRUNT ZESTAW 6,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 33856
+                "name": "GRUNT ZESTAW 6,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 35941.6
             },
             {
-                "name": "GRUNT ZESTAW 7 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 34776
+                "name": "GRUNT ZESTAW 7 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 36861.6
             },
             {
-                "name": "GRUNT ZESTAW 7,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 35436
+                "name": "GRUNT ZESTAW 7,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 37781.6
             },
             {
-                "name": "GRUNT ZESTAW 8 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36496
+                "name": "GRUNT ZESTAW 8 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 38701.6
             },
             {
-                "name": "GRUNT ZESTAW 8,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 36856
+                "name": "GRUNT ZESTAW 8,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 39221.6
             },
             {
-                "name": "GRUNT ZESTAW 9 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 37516
+                "name": "GRUNT ZESTAW 9 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 40141.6
             },
             {
-                "name": "GRUNT ZESTAW 9,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 38176
+                "name": "GRUNT ZESTAW 9,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 41061.6
             },
             {
-                "name": "GRUNT ZESTAW 10 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 39036
+                "name": "GRUNT ZESTAW 10 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 41981.6
             },
             {
-                "name": "GRUNT ZESTAW 10,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 39896
+                "name": "GRUNT ZESTAW 10,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 42901.6
             },
             {
-                "name": "GRUNT ZESTAW 11 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 40756
+                "name": "GRUNT ZESTAW 11 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 43821.6
             },
             {
-                "name": "GRUNT ZESTAW 11,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 41616
+                "name": "GRUNT ZESTAW 11,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 44741.6
             },
             {
-                "name": "GRUNT ZESTAW 12 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 42476
+                "name": "GRUNT ZESTAW 12 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 45661.6
             },
             {
-                "name": "GRUNT ZESTAW 12,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 43266
+                "name": "GRUNT ZESTAW 12,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 46451.6
             },
             {
-                "name": "GRUNT ZESTAW 13 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 44056
+                "name": "GRUNT ZESTAW 13 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 47371.6
             },
             {
-                "name": "GRUNT ZESTAW 13,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 44846
+                "name": "GRUNT ZESTAW 13,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 48291.6
             },
             {
-                "name": "GRUNT ZESTAW 14 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 45636
+                "name": "GRUNT ZESTAW 14 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 49211.6
             },
             {
-                "name": "GRUNT ZESTAW 14,5 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 46426
+                "name": "GRUNT ZESTAW 14,5 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 50131.6
             },
             {
-                "name": "GRUNT ZESTAW 15 KWP TCL 500 + GOODWE 3F + magazyn energii wysokonapięciowy - Dyness Tower",
-                "price": 47216
+                "name": "GRUNT ZESTAW 15 KWP TCL 500 + HECMANN + magazyn energii - ECO BSS L10",
+                "price": 51051.6
             }
         ]
     },
@@ -2408,7 +2408,6 @@
                 method: 'POST',
                 mode: 'no-cors', 
                 cache: 'no-cache',
-                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
             });
             console.log("Dane wysłane do arkusza (status sprawdzisz w Google Sheets)");
@@ -2442,6 +2441,42 @@
         doc.autoTable({ startY: doc.lastAutoTable.finalY + 10, body: summary, theme: 'plain', styles: { halign: 'right', fontStyle: 'bold' }, margin: { left: 80 } });
         doc.save(`Oferta_${removePolishChars(daneOferty.klient.imie).replace(/ /g,'_')}_${typ}.pdf`);
     }
+
+
+
+    function ustawWidocznoscPolMetrow() {
+        const przekop = document.getElementById('przekop');
+        const przekopKontener = document.getElementById('dlugosc-przekopu-kontener');
+        const przekopInput = document.getElementById('dlugosc-przekopu');
+        if (przekop && przekopKontener && przekopInput) {
+            const pokazPrzekop = przekop.value === 'powyzej10';
+            przekopKontener.classList.toggle('ukryty', !pokazPrzekop);
+            if (!pokazPrzekop) przekopInput.value = 0;
+        }
+
+        const samKabel = document.getElementById('sam-kabel');
+        const kabelKontener = document.getElementById('dlugosc-kabla-kontener');
+        const kabelInput = document.getElementById('dlugosc-kabla');
+        if (samKabel && kabelKontener && kabelInput) {
+            const pokazKabel = samKabel.value !== 'brak' && samKabel.value !== '0';
+            kabelKontener.classList.toggle('ukryty', !pokazKabel);
+            if (!pokazKabel) kabelInput.value = 0;
+        }
+    }
+
+    document.getElementById('przekop').addEventListener('change', function () {
+        ustawWidocznoscPolMetrow();
+        aktualizujPodsumowanieWizualne();
+    });
+
+    document.getElementById('sam-kabel').addEventListener('change', function () {
+        ustawWidocznoscPolMetrow();
+        aktualizujPodsumowanieWizualne();
+    });
+
+    document.getElementById('dlugosc-przekopu').addEventListener('input', aktualizujPodsumowanieWizualne);
+    document.getElementById('dlugosc-kabla').addEventListener('input', aktualizujPodsumowanieWizualne);
+    ustawWidocznoscPolMetrow();
 
     document.getElementById('typ-pokrycia').addEventListener('change', odswiezWszystkieListy);
     document.querySelectorAll('.lista-produktow').forEach(s => s.addEventListener('change', function() {
